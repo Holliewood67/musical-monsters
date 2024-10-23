@@ -20,12 +20,12 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Musical Monsters - Tulsa",
+    title: "Ethan Cantrell's Musical Monsters",
     description: "Welcome to the home of Ethan Cantrell's Musical Monsters. Our Mission is to provide independent musicians with the tools to take the next step in their musical journey at a reasonable cost.",
   
     images: [
       {
-        url: 'https://master.d18p9d6pb8grtc.amplifyapp.com//mmog.png', // Must be an absolute URL
+        url: 'https://www.ethancantrell.com/mmog.png', // Must be an absolute URL
         width: 800,
         height: 600,
       },
