@@ -25,7 +25,7 @@ export const metadata = {
   
     images: [
       {
-        url: 'http://localhost:3000/mm.png', // Must be an absolute URL
+        url: 'http://localhost:3000/mmog.png', // Must be an absolute URL
         width: 800,
         height: 600,
       },
