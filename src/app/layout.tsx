@@ -25,7 +25,7 @@ export const metadata = {
   
     images: [
       {
-        url: 'http://localhost:3000/mmog.png', // Must be an absolute URL
+        url: 'https://master.d18p9d6pb8grtc.amplifyapp.com//mmog.png', // Must be an absolute URL
         width: 800,
         height: 600,
       },
