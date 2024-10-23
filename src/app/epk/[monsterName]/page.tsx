@@ -19,7 +19,7 @@ type Props = {
          
     return {
       title: `${monster?.name} - Musical Monsters`,
-      description: ``,
+      description: `${monster?.bioText[0]}`,
       openGraph: {
         title: `${monster?.name} - Musical Monsters`,
         description: ``,
@@ -27,7 +27,7 @@ type Props = {
         siteName: 'Musical Monsters',
         images: [
             {
-              url: 'https://nextjs.org/og.png', // Must be an absolute URL
+              url: `https://localhose:3000/epkpics/${monster?.pics[0]}.png`, // Must be an absolute URL
               width: 800,
               height: 600,
             },
