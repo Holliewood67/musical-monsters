@@ -47,7 +47,7 @@ const monsterList ={
         spotifyUrl: "7jV8Cj5bqsja5xOXainG8i?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/profile.php?id=695022605",
         igLink: "",
-        ttLink: "",
+        ttLink: "https://www.tiktok.com/@jefftrieshisbest",
         ytLink: "",
         bcLink: "",
     },
