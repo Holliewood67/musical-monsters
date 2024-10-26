@@ -52,6 +52,23 @@ const monsterList ={
         bcLink: "",
     },
     {
+        name: "Chris Ray",
+        pics: ["chris-ray-1","chris-ray-2", "chris-ray-3", "chris-ray-4", "chris-ray-5"],
+        urlName: "chris-ray",
+        bioText: [
+            `Chris Ray blends 90s grunge with a modern edge, influenced by Alice in Chains, Soundgarden, and Ray LaMontagne. His sound pulls from an eclectic mix of genres, including blues, punk, and pop, reflecting a lifetime of musical exploration.`,
+            `Chris started performing at a young age, inspired by family jam sessions and campfire singalongs. His career began at coffee shops and riverside gigs, leading to performances at venues like The Bowery and Harvard Sports Bar, where his music left lasting impressions.`,
+            `Known for reading the room and creating memorable experiences, Chris has performed at events like Inola Hay Days and American Airlines employee parties. He is proud of his ability to engage audiences across genres, whether through original songs or personalized setlists.`,
+            `Chris's goal is to complete and release a collection of 10 songs, blending new ideas with past inspirations. With five tracks nearly finished, he is determined to keep writing, refining, and sharing his music with the world.`
+        ],
+        spotifyUrl: "",
+        fbLink: "https://www.facebook.com/profile.php?id=100093616841458",
+        igLink: "https://www.instagram.com/christopherray862/",
+        ttLink: "https://www.tiktok.com/@misterchrisr?lang=en",
+        ytLink: "",
+        bcLink: "",
+    },
+    {
         name: "Andrew Live",
         pics: ["andrew-live-1", "andrew-live-2", "andrew-live-3", "andrew-live-4", "andrew-live-5"],
         urlName: "andrew-live",
