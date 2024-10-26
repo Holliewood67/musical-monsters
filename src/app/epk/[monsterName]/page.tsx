@@ -27,7 +27,7 @@ type Props = {
         siteName: 'Musical Monsters',
         images: [
             {
-              url: `https://www.ethancantrell.com/epkpics/${monster?.pics[0]}.png`, // Must be an absolute URL
+              url: `https://www.ethancantrell.com/epkpics/${monster?.urlName}-og.png`, // Must be an absolute URL
               width: 800,
               height: 600,
             },
