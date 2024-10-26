@@ -3,6 +3,7 @@ const monsterList ={
     {
         name: "Ethan Cantrell",
         pics: ["ethan-cantrell-1", "ethan-cantrell-2","ethan-cantrell-3", "ethan-cantrell-4", "ethan-cantrell-5"],
+        ogPic: "ethan-cantrell-og",
         urlName: "ethan-cantrell",
         bioText: [
             `delivers an acoustic blend of folk and punk, infused with ska and reggae sensibilities. His music is shaped by influences such as Green Day, Woody Guthrie, Streetlight Manifesto, and Pat the Bunny, creating a sound that's both unique and dynamic.`,
@@ -20,6 +21,8 @@ const monsterList ={
     {
         name: "Eric Ryan-Johnson",
         pics: ["erj-1", "erj-2", "erj-3", "erj-4", "erj-5"],
+        ogPic: "erj-og",
+
         urlName: "eric-ryan-johnson",
         bioText: [
             `Eric Ryan-Johnson is a versatile musician based in Tulsa, Oklahoma, renowned for his skills as a vocalist, guitarist, and violinist. Originally from Madison, Wisconsin, he has cultivated a diverse musical career that spans several genres, including alt-acoustic rock and traditional Irish music.`,
@@ -38,6 +41,7 @@ const monsterList ={
         name: "Jeff Bush",
         pics: ["jeff-bush-1","jeff-bush-2", "jeff-bush-3", "jeff-bush-4", "jeff-bush-5"],
         urlName: "jeff-bush",
+        ogPic: "jeff-bush-og",
         bioText: [
             `is a folk punk ukulele player whose sound is as raw and emotional as it is versatile. Influenced by artists like Amigo the Devil and Weird Al, as well as classic rock, old country, and folk punk, he brings a unique blend of intensity and heartfelt storytelling to his music.`,
             `After casually playing guitar in high school and college, Jeff stepped away from music for years. In 2023, he rediscovered his passion, this time through the ukulele, which reignited his love for creating music. Since then, he has been honing his craft, performing at various venues around Tulsa including Lot No. 6 and Soundpony, as well as busking in downtown Tulsa where he  captivates passersbys with his dynamic vocal range that shifts from clean tones to raspy growls and powerful screams.`,
@@ -54,6 +58,7 @@ const monsterList ={
     {
         name: "Chris Ray",
         pics: ["chris-ray-1","chris-ray-2", "chris-ray-3", "chris-ray-4", "chris-ray-5"],
+        ogPic: "chris-ray-og",
         urlName: "chris-ray",
         bioText: [
             `Chris Ray blends 90s grunge with a modern edge, influenced by Alice in Chains, Soundgarden, and Ray LaMontagne. His sound pulls from an eclectic mix of genres, including blues, punk, and pop, reflecting a lifetime of musical exploration.`,
