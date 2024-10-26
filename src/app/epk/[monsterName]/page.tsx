@@ -23,11 +23,11 @@ type Props = {
       openGraph: {
         title: `${monster?.name} - Musical Monsters`,
         description: ``,
-        url: `https://ethancantrell.com/epk/${monster?.urlName}-og.png`,
+        url: `https://ethancantrell.com/epk/${monster?.urlName}`,
         siteName: 'Musical Monsters',
         images: [
             {
-              url: `https://www.ethancantrell.com/epkpics/${monster?.urlName}-og.png`, // Must be an absolute URL
+              url: `https://www.ethancantrell.com/epkpics/${monster?.ogPic}.png`, // Must be an absolute URL
               width: 800,
               height: 600,
             },
