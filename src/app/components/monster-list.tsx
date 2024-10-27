@@ -25,7 +25,7 @@ const monsterList ={
 
         urlName: "eric-ryan-johnson",
         bioText: [
-            `Eric Ryan-Johnson is a versatile musician based in Tulsa, Oklahoma, renowned for his skills as a vocalist, guitarist, and violinist. Originally from Madison, Wisconsin, he has cultivated a diverse musical career that spans several genres, including alt-acoustic rock and traditional Irish music.`,
+            `is a versatile musician based in Tulsa, Oklahoma, renowned for his skills as a vocalist, guitarist, and violinist. Originally from Madison, Wisconsin, he has cultivated a diverse musical career that spans several genres, including alt-acoustic rock and traditional Irish music.`,
             `Eric is deeply involved in both solo projects and collaborative efforts. His solo work features a discography with multiple albums, such as "Just a Lil' Bit of Love" (2021) and "Two Hours out of Nashville" (2022), which highlight his ability to seamlessly transition from heartfelt acoustic ballads to more experimental sounds.`,
             `In addition to his solo career, Eric is an accomplished fiddle player and instructor. He teaches both classical violin and traditional Irish fiddle and has been an active participant in Irish music groups like Cairde na Gael. His expertise has led him to teach at various workshops and festivals, where he shares his passion for Irish music with others.`,
             `Whether performing solo or as part of a group, Eric Ryan-Johnson brings a rich blend of musical traditions to his work, making him a dynamic and influential figure in the Tulsa music scene.`
@@ -61,7 +61,7 @@ const monsterList ={
         ogPic: "chris-ray-og",
         urlName: "chris-ray",
         bioText: [
-            `Chris Ray blends 90s grunge with a modern edge, influenced by Alice in Chains, Soundgarden, and Ray LaMontagne. His sound pulls from an eclectic mix of genres, including blues, punk, and pop, reflecting a lifetime of musical exploration.`,
+            `blends 90s grunge with a modern edge, influenced by Alice in Chains, Soundgarden, and Ray LaMontagne. His sound pulls from an eclectic mix of genres, including blues, punk, and pop, reflecting a lifetime of musical exploration.`,
             `Chris started performing at a young age, inspired by family jam sessions and campfire singalongs. His career began at coffee shops and riverside gigs, leading to performances at venues like The Bowery and Harvard Sports Bar, where his music left lasting impressions.`,
             `Known for reading the room and creating memorable experiences, Chris has performed at events like Inola Hay Days and American Airlines employee parties. He is proud of his ability to engage audiences across genres, whether through original songs or personalized setlists.`,
             `Chris's goal is to complete and release a collection of 10 songs, blending new ideas with past inspirations. With five tracks nearly finished, he is determined to keep writing, refining, and sharing his music with the world.`
@@ -74,22 +74,40 @@ const monsterList ={
         bcLink: "",
     },
     {
-        name: "Andrew Live",
-        pics: ["andrew-live-1", "andrew-live-2", "andrew-live-3", "andrew-live-4", "andrew-live-5"],
-        urlName: "andrew-live",
+        name: "Josh Thorne",
+        pics: ["josh-thorne-1","josh-thorne-2", "josh-thorne-3", "josh-thorne-4", "josh-thorne-5"],
+        ogPic: "josh-thorne-og",
+        urlName: "josh-thorne",
         bioText: [
-            `has been a staple in the Tulsa, OK music scene for 27 years, playing guitar and singing at venues across the tri-state area. He currently hosts a 21+ open mic on Wednesdays at Smitty's on Main St. Jenks and an all-ages open mic on Tuesdays at Mother Road Market, alongside his solo performances at various dinner services and bars around Tulsa and its surrounding areas.`,
-            `Andrew is eager to expand his reach by adding new and exciting venues to his roster and setting up more local music showcases. His ambition also includes broadening his bookings to other areas, bringing his dynamic performances to a wider audience.`,
-            `Some of the recent venues where Andrew has performed include Good Day Tulsa, The Hunt Club, The District in Owasso, and The Patriot Golf Club. His performances have also graced CJ Moloney's, Sidecar on Cherry Street and in Jenks, and notable events like Tulsa Mayfest and the Tulsa State Fair. Whether it’s a lively bar or a sophisticated dinner service, Andrew knows how to keep the energy alive.`,
-            `Influenced by '90s alternative rock, Andrew Live’s sets now also feature elements of hip hop and R&B, covering over three hours of music. With 30 original songs under his belt, an extensive playlist, and professional sound and promotional equipment, Andrew ensures a seamless and entertaining experience for any venue. His ultimate goal is to drive sales, entertain the crowd, and create an unforgettable atmosphere.`
+            `delivers a unique blend of psychedelic pop, drawing influence from the Beatles, Grandaddy, Radiohead, and Animal Collective. With folk roots and a knack for Phish-style jamming, he creates warm, captivating recordings that reflect both depth and playfulness.`,
+            `Known for his good stage presence and engaging with patrons, Josh offers performances that leave a lasting impression. His songwriting and playing stand out, bringing originality to every venue, from cafes to bars.`,
+            `Josh's music merges Wilco-inspired writing with the dynamic sounds of Chicago and Boston, creating an eclectic mix that resonates with diverse audiences.`,
+            `Currently, he aims to continue writing and recording while pursuing opportunities to open for bands and perform at intimate venues, spreading his evolving sound far and wide.`
         ],
-        spotifyUrl: "4OEzL5wrgHWiaEIbWbNhBT?utm_source=generator&theme=0",
-        fbLink: "https://www.facebook.com/AndrewLive143",
-        igLink: "https://www.instagram.com/andrew_live143/",
+        spotifyUrl: "",
+        fbLink: "https://www.facebook.com/people/Josh-Thorne/pfbid0qd34YN82gmsfbZT6fipfUhicAZ2jtg1RYQtypPqbwXxLZCFtoS3obsAnbHZzYGnvl/",
+        igLink: "",
         ttLink: "",
-        ytLink: "https://www.youtube.com/@andrewlive3428",
-        bcLink: "https://ethancantrell.bandcamp.com",
+        ytLink: "https://www.youtube.com/channel/UCZTcgIxQKuY2i7oNgDBDfXA",
+        bcLink: "",
     },
+    // {
+    //     name: "Andrew Live",
+    //     pics: ["andrew-live-1", "andrew-live-2", "andrew-live-3", "andrew-live-4", "andrew-live-5"],
+    //     urlName: "andrew-live",
+    //     bioText: [
+    //         `has been a staple in the Tulsa, OK music scene for 27 years, playing guitar and singing at venues across the tri-state area. He currently hosts a 21+ open mic on Wednesdays at Smitty's on Main St. Jenks and an all-ages open mic on Tuesdays at Mother Road Market, alongside his solo performances at various dinner services and bars around Tulsa and its surrounding areas.`,
+    //         `Andrew is eager to expand his reach by adding new and exciting venues to his roster and setting up more local music showcases. His ambition also includes broadening his bookings to other areas, bringing his dynamic performances to a wider audience.`,
+    //         `Some of the recent venues where Andrew has performed include Good Day Tulsa, The Hunt Club, The District in Owasso, and The Patriot Golf Club. His performances have also graced CJ Moloney's, Sidecar on Cherry Street and in Jenks, and notable events like Tulsa Mayfest and the Tulsa State Fair. Whether it’s a lively bar or a sophisticated dinner service, Andrew knows how to keep the energy alive.`,
+    //         `Influenced by '90s alternative rock, Andrew Live’s sets now also feature elements of hip hop and R&B, covering over three hours of music. With 30 original songs under his belt, an extensive playlist, and professional sound and promotional equipment, Andrew ensures a seamless and entertaining experience for any venue. His ultimate goal is to drive sales, entertain the crowd, and create an unforgettable atmosphere.`
+    //     ],
+    //     spotifyUrl: "4OEzL5wrgHWiaEIbWbNhBT?utm_source=generator&theme=0",
+    //     fbLink: "https://www.facebook.com/AndrewLive143",
+    //     igLink: "https://www.instagram.com/andrew_live143/",
+    //     ttLink: "",
+    //     ytLink: "https://www.youtube.com/@andrewlive3428",
+    //     bcLink: "https://ethancantrell.bandcamp.com",
+    // },
 ]}
 
 export default monsterList;
