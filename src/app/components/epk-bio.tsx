@@ -5,11 +5,18 @@ export default function EPKBio(
         monster: any,
     }
 ){
+    const BioPicOne = () => {
+        let bioPics = props.monster.pics.slice();
+        let indexOne = Math.floor(Math.random() * bioPics.length);
+        return  <Image className="border-b-2 md:rounded-br-full md:border-4 md:border-l-0 md:border-t-0 border-yellow-400" src={`/epkpics/${props.monster.pics[indexOne]}.png`} alt="Ethan Cantrell" width={800} height={400} />
+    }
+
     return(
         <div className="items-center justify-center text-center text-xl border-b-2 border-yellow-400 leading-relaxed">
             <div className="md:flex items-center lg:justify-between">
                 <div className="justify-center flex max-w-md">
-                    <Image className="border-b-2 md:rounded-br-full md:border-4 md:border-l-0 md:border-t-0 border-yellow-400" src={`/epkpics/${props.monster.pics[0]}.png`} alt="Ethan Cantrell" width={800} height={400} />
+                    {/* <Image className="border-b-2 md:rounded-br-full md:border-4 md:border-l-0 md:border-t-0 border-yellow-400" src={`/epkpics/${props.monster.pics[0]}.png`} alt="Ethan Cantrell" width={800} height={400} /> */}
+                    <BioPicOne />
                 </div>
                 <div className="pt-4 max-w-sm lg:max-w-screen-md md:text-2xl lg:text-4xl">
                     <h1 className="text-4xl flex justify-center">{props.monster.name}</h1>
