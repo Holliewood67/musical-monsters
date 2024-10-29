@@ -91,22 +91,41 @@ const monsterList ={
         ytLink: "https://www.youtube.com/channel/UCZTcgIxQKuY2i7oNgDBDfXA",
         bcLink: "",
     },
+    {
+        name: "Vic Ortega",
+        pics: ["vic-ortega-1", "vic-ortega-2", "vic-ortega-3", "vic-ortega-4", "vic-ortega-5"],
+        ogPic: "vic-ortega-og",
+        urlName: "vic-ortega",
+        bioText: [
+            `delivers a mix of alternative, grunge, and folk sounds, drawing inspiration from artists like Mazzy Star, Adele, Chris Cornell, and Eddie Vedder. Their music reflects a blend of introspective melodies and raw emotion, offering a unique take on familiar genres.`,
+            `Vic has performed at a variety of venues, including Tap on the Tracks, Sidecar, Gypsy Coffee House, McKinney’s, Toast, and Tulsa Zoo. Their performances create a joyous and uplifting atmosphere, often captivating audiences and encouraging heartfelt applause.`,
+            `Growing up with a deep connection to music, Vic's parents nurtured their passion by enrolling them in music programs. Moving to Tulsa was a pivotal moment, introducing them to a diverse music community where they felt right at home.`,
+            `Vic’s current goal is to make music a full-time pursuit, using their art to inspire others. With multiple singles and albums ready to be recorded, they aim to turn their latest songwriting efforts into reality, reinvesting their earnings back into their craft.`
+        ],
+        spotifyUrl: "2gmYgjnkhGHkx651qI4GiD?utm_source=generator",
+        fbLink: "https://www.facebook.com/vicortegamusic",
+        igLink: "https://www.instagram.com/vicortegamusic/",
+        ttLink: "https://www.tiktok.com/@vicortegamusic",
+        ytLink: "",
+        bcLink: "",
+    },
     // {
-    //     name: "Andrew Live",
-    //     pics: ["andrew-live-1", "andrew-live-2", "andrew-live-3", "andrew-live-4", "andrew-live-5"],
-    //     urlName: "andrew-live",
+    //     name: "",
+    //     pics: ["first-last-1", "first-last-2", "first-last-3", "first-last-4", "first-last-5"],
+    //     ogPic: "first-last-og",
+    //     urlName: "first-last",
     //     bioText: [
-    //         `has been a staple in the Tulsa, OK music scene for 27 years, playing guitar and singing at venues across the tri-state area. He currently hosts a 21+ open mic on Wednesdays at Smitty's on Main St. Jenks and an all-ages open mic on Tuesdays at Mother Road Market, alongside his solo performances at various dinner services and bars around Tulsa and its surrounding areas.`,
-    //         `Andrew is eager to expand his reach by adding new and exciting venues to his roster and setting up more local music showcases. His ambition also includes broadening his bookings to other areas, bringing his dynamic performances to a wider audience.`,
-    //         `Some of the recent venues where Andrew has performed include Good Day Tulsa, The Hunt Club, The District in Owasso, and The Patriot Golf Club. His performances have also graced CJ Moloney's, Sidecar on Cherry Street and in Jenks, and notable events like Tulsa Mayfest and the Tulsa State Fair. Whether it’s a lively bar or a sophisticated dinner service, Andrew knows how to keep the energy alive.`,
-    //         `Influenced by '90s alternative rock, Andrew Live’s sets now also feature elements of hip hop and R&B, covering over three hours of music. With 30 original songs under his belt, an extensive playlist, and professional sound and promotional equipment, Andrew ensures a seamless and entertaining experience for any venue. His ultimate goal is to drive sales, entertain the crowd, and create an unforgettable atmosphere.`
+    //         ``,
+    //         ``,
+    //         ``,
+    //         ``
     //     ],
-    //     spotifyUrl: "4OEzL5wrgHWiaEIbWbNhBT?utm_source=generator&theme=0",
-    //     fbLink: "https://www.facebook.com/AndrewLive143",
-    //     igLink: "https://www.instagram.com/andrew_live143/",
+    //     spotifyUrl: "",
+    //     fbLink: "",
+    //     igLink: "",
     //     ttLink: "",
-    //     ytLink: "https://www.youtube.com/@andrewlive3428",
-    //     bcLink: "https://ethancantrell.bandcamp.com",
+    //     ytLink: "",
+    //     bcLink: "",
     // },
 ]}
 
