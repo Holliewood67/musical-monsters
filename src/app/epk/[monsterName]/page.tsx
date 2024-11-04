@@ -19,10 +19,10 @@ type Props = {
          
     return {
       title: `${monster?.name} - Musical Monsters`,
-      description: `${monster?.bioText[0]}`,
+      description: `${monster?.name} ${monster?.bioText[0]}`,
       openGraph: {
         title: `${monster?.name} - Musical Monsters`,
-        description: ``,
+        description: `${monster?.name} ${monster?.bioText[0]}`,
         url: `https://ethancantrell.com/epk/${monster?.urlName}`,
         siteName: 'Musical Monsters',
         images: [
