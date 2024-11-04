@@ -109,6 +109,24 @@ const monsterList ={
         ytLink: "",
         bcLink: "",
     },
+    {
+        name: "FrayTus",
+        pics: ["fraytus-1", "fraytus-2", "fraytus-3", "fraytus-4", "fraytus-5"],
+        ogPic: "first-last-og",
+        urlName: "fraytus",
+        bioText: [
+            `blends the intensity of grunge, rap, rock, and hip-hop to create a genre-crossing sound that’s all his own. Drawing inspiration from artists like Korn, Nirvana, Nas, and Wu-Tang Clan, his music delivers a gritty and powerful experience.`,
+            `With performances spanning eight states, FrayTus has captivated audiences at major events, including the OKC State Fair and the Great Plains Music Festival. His approach as a live loop artist sets him apart, giving each show a unique and dynamic edge.`,
+            `His passion for music ignited at age 14 when he saw someone play guitar and decided he wanted to do the same. Years later, after watching Tash Sultana’s live looping, he felt inspired to incorporate this technique into his own performances.`,
+            `Dedicated to constantly creating, FrayTus is always working on new music and pushing his sound. Currently, he’s promoting his latest single, “Kg,” which will launch a mini-tour starting on November 12th, with more updates available on his social media.`
+        ],
+        spotifyUrl: "6u6fD16y2MxAO3HZf3B1mZ?utm_source=generator&theme=0",
+        fbLink: "https://www.facebook.com/FrayTus/",
+        igLink: "https://www.instagram.com/fraytus/?hl=en",
+        ttLink: "https://www.tiktok.com/@fraytus",
+        ytLink: "https://www.youtube.com/channel/UChu86ZFfS3NiSEXufsQA-uw",
+        bcLink: "",
+    },
     // {
     //     name: "",
     //     pics: ["first-last-1", "first-last-2", "first-last-3", "first-last-4", "first-last-5"],
