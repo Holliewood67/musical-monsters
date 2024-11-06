@@ -13,7 +13,9 @@ export default function MonsterCard(
                 <div className="monster-card-img">
                     <Image className="rounded-3xl" src={`/epkpics/${props.imgPath}`} alt="Ethan Cantrell" width={800} height={1000} />
                 </div>
-                <div className=" text-white flex items-center justify-center"><h1 className="flex justify-center w-[80%] text-base bg-yellow-400 my-2  border-2 border-black border-rounded rounded-full text-black">{props.monsterName}</h1></div>
+                <div className=" text-white flex items-center justify-center">
+                    <h1 className="flex justify-center text-2xl p-2 w-full  bg-yellow-400 my-2  border-2 border-black border-rounded rounded-full text-black">{props.monsterName}</h1>
+                </div>
             </div>
         </Link>
     )

@@ -3,6 +3,7 @@ import Monsters from "./components/monsters";
 import Mission from "./components/mission";
 import Services from "./components/services";
 import News from "./components/news";
+import Events from "./components/events";
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       </div>
       <Services />
       <Monsters />
+      {/* <Events /> */}
     </>
   );
 }
