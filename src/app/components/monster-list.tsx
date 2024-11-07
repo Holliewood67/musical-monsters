@@ -112,7 +112,7 @@ const monsterList ={
     {
         name: "FrayTus",
         pics: ["fraytus-1", "fraytus-2", "fraytus-3", "fraytus-4", "fraytus-5"],
-        ogPic: "first-last-og",
+        ogPic: "fraytus-og",
         urlName: "fraytus",
         bioText: [
             `blends the intensity of grunge, rap, rock, and hip-hop to create a genre-crossing sound that’s all his own. Drawing inspiration from artists like Korn, Nirvana, Nas, and Wu-Tang Clan, his music delivers a gritty and powerful experience.`,
