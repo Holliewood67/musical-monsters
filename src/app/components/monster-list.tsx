@@ -140,7 +140,7 @@ const monsterList ={
         ],
         spotifyUrl: "",
         fbLink: "https://www.facebook.com/profile.php?id=100084237335680",
-        igLink: "https://www.instagram.com/dhill_music/profilecard/?igsh=YXc5aW03MDJ2aXZh",
+        igLink: "https://www.instagram.com/dhill_music",
         ttLink: "https://www.tiktok.com/@dhillmusicc",
         ytLink: "",
         bcLink: "",
