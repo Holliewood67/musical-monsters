@@ -25,7 +25,7 @@ export const metadata = {
   
     images: [
       {
-        url: 'https://www.ethancantrell.com/mmog.png', // Must be an absolute URL
+        url: 'https://www.musicalmonsterstulsa.com/mmog.png', // Must be an absolute URL
         width: 800,
         height: 600,
       },
