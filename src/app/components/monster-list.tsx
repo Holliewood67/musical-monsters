@@ -127,6 +127,24 @@ const monsterList ={
         ytLink: "https://www.youtube.com/channel/UChu86ZFfS3NiSEXufsQA-uw",
         bcLink: "",
     },
+    {
+        name: "Davaughnte Hill",
+        pics: ["davaughnte-hill-1", "davaughnte-hill-2", "davaughnte-hill-3", "davaughnte-hill-4"],
+        ogPic: "davaughnte-hill-og",
+        urlName: "davaughnte-hill",
+        bioText: [
+            `brings a universal style to his music, shaped by the soulfulness of rhythm and blues and a foundation built in church choirs. His sound blends heartfelt melodies with an energetic presence that captivates any audience.`,
+            `His performances range from bars and alleyway parties to college campuses. A standout moment in his career was playing at Dickinson State University, where he entertained an entire town and felt the thrill of performing on a college stage.`,
+            `Starting with church and school choirs, Davaughnte discovered his passion for music in unexpected ways. Those early experiences prepared him for this journey, leading to moments when listeners first celebrated his natural talent.`,
+            `With ambitions to be one of the greatest singer-songwriters, Davaughnte is constantly collaborating with Oklahoma artists. He’s gearing up to release a new single, finalize an EP, and work toward his ultimate goal: performing at Tulsa’s iconic BOK Center.`
+        ],
+        spotifyUrl: "",
+        fbLink: "https://www.facebook.com/profile.php?id=100084237335680",
+        igLink: "https://www.instagram.com/davaughntehill/",
+        ttLink: "https://www.tiktok.com/@dhillmusicc",
+        ytLink: "",
+        bcLink: "",
+    },
     // {
     //     name: "",
     //     pics: ["first-last-1", "first-last-2", "first-last-3", "first-last-4", "first-last-5"],
