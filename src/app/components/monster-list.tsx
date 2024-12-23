@@ -139,7 +139,7 @@ const monsterList ={
             `Starting with church and school choirs, Davaughnte discovered his passion for music in unexpected ways. Those early experiences prepared him for this journey, leading to moments when listeners first celebrated his natural talent.`,
             `With ambitions to be one of the greatest singer-songwriters, Davaughnte is constantly collaborating with Oklahoma artists. He’s gearing up to release a new single, finalize an EP, and work toward his ultimate goal: performing at Tulsa’s iconic BOK Center.`
         ],
-        spotifyUrl: "",
+        spotifyUrl: "artist/11ZrJczc8P1RNLllDln7S9?utm_source=generator",
         fbLink: "https://www.facebook.com/profile.php?id=100084237335680",
         igLink: "https://www.instagram.com/dhill_music ",
         ttLink: "https://www.tiktok.com/@dhillmusicc",
