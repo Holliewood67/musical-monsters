@@ -160,7 +160,7 @@ const monsterList ={
         spotifyUrl: "2HLDLV7SRwYxCp228iwoeK?utm_source=generator",
         fbLink: "https://www.facebook.com/andre.chisum",
         igLink: "https://www.instagram.com/andrechisummusic/",
-        ttLink: "https://www.instagram.com/andrechisummusic/",
+        ttLink: "https://www.tiktok.com/@andrechisummusic?lang=en",
         ytLink: "",
         bcLink: "",
     },
