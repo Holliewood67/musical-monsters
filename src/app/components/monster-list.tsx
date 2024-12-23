@@ -118,7 +118,8 @@ const monsterList ={
             `blends the intensity of grunge, rap, rock, and hip-hop to create a genre-crossing sound that’s all his own. Drawing inspiration from artists like Korn, Nirvana, Nas, and Wu-Tang Clan, his music delivers a gritty and powerful experience.`,
             `With performances spanning eight states, FrayTus has captivated audiences at major events, including the OKC State Fair and the Great Plains Music Festival. His approach as a live loop artist sets him apart, giving each show a unique and dynamic edge.`,
             `His passion for music ignited at age 14 when he saw someone play guitar and decided he wanted to do the same. Years later, after watching Tash Sultana’s live looping, he felt inspired to incorporate this technique into his own performances.`,
-            `Dedicated to constantly creating, FrayTus is always working on new music and pushing his sound. Currently, he’s promoting his latest single, “Kg,” which will launch a mini-tour starting on November 12th, with more updates available on his social media.`
+            `Dedicated to constantly creating, FrayTus 
+             is always working on new music and pushing his sound. Currently, he’s promoting his latest single, “Kg,” which will launch a mini-tour starting on November 12th, with more updates available on his social media.`
         ],
         spotifyUrl: "6u6fD16y2MxAO3HZf3B1mZ?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/FrayTus/",
@@ -140,8 +141,26 @@ const monsterList ={
         ],
         spotifyUrl: "",
         fbLink: "https://www.facebook.com/profile.php?id=100084237335680",
-        igLink: "https://www.instagram.com/dhill_music",
+        igLink: "https://www.instagram.com/dhill_music ",
         ttLink: "https://www.tiktok.com/@dhillmusicc",
+        ytLink: "",
+        bcLink: "",
+    },
+    {
+        name: "Andre Chisum",
+        pics: ["andre-chisum-1","andre-chisum-2","andre-chisum-3","andre-chisum-4","andre-chisum-5","andre-chisum-6","andre-chisum-7","andre-chisum-8","andre-chisum-9",],
+        ogPic: "andre-chisum-og",
+        urlName: "andre-chisum",
+        bioText: [
+            `combines 90s grunge and 70s country influences, writing heartfelt original songs while performing a wide range of covers. His inspirations, including Nirvana and Merle Haggard, echo in both his music and performances.`,
+            `Starting in his family band, The Rusty Tornadoes, Andre quickly made a name for himself. As a solo artist, he’s played venues like The Blue Rose, Grumpy’s Tavern, and The District Bar and Grill. With his band, Okra and the Universe, Andre has performed at Mayfest and The Venue Shrine, among others. He’s also part of Tulsa’s open mic circuit, frequenting spots like Lot No. 6 and Gypsy Coffee House.`,
+            `Andre stands out with his loyal following, drawing crowds of friends and family who love his music and support his journey. Whether solo or in collaboration, his performances promise an engaging experience that resonates deeply with audiences.`,
+            `Currently, Andre balances three projects: his solo acoustic shows, an acoustic duo Mae ‘N Dre with Mae Bartel, and playing bass with Okra and the Universe. He’s actively writing, recording, and growing as an artist, aiming to leave a lasting mark on the local music scene and beyond.`
+        ],
+        spotifyUrl: "2HLDLV7SRwYxCp228iwoeK?utm_source=generator",
+        fbLink: "https://www.facebook.com/andre.chisum",
+        igLink: "https://www.instagram.com/andrechisummusic/",
+        ttLink: "https://www.instagram.com/andrechisummusic/",
         ytLink: "",
         bcLink: "",
     },
