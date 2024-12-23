@@ -153,7 +153,7 @@ const monsterList ={
         urlName: "andre-chisum",
         bioText: [
             `combines 90s grunge and 70s country influences, writing heartfelt original songs while performing a wide range of covers. His inspirations, including Nirvana and Merle Haggard, echo in both his music and performances.`,
-            `Starting in his family band, The Rusty Tornadoes, Andre quickly made a name for himself. As a solo artist, he’s played venues like The Blue Rose, Grumpy’s Tavern, and The District Bar and Grill. With his band, Okra and the Universe, Andre has performed at Mayfest and The Venue Shrine, among others. He’s also part of Tulsa’s open mic circuit, frequenting spots like Lot No. 6 and Gypsy Coffee House.`,
+            `Starting in his family band, The Rusty Tornadoes, Andre quickly made a name for himself. As a solo artist, he’s played venues like The Blue Rose, Grumpy’s Tavern, and The District Bar and Grill. With his band, Okra and the Universe, Andre has performed at Mayfest and The Venue Shrine, among others. He’s also part of Tulsa’s open mic circuit, frequenting spots like Broken Arrow Brewing Co. and Lot No. 6.`,
             `Andre stands out with his loyal following, drawing crowds of friends and family who love his music and support his journey. Whether solo or in collaboration, his performances promise an engaging experience that resonates deeply with audiences.`,
             `Currently, Andre balances three projects: his solo acoustic shows, an acoustic duo Mae ‘N Dre with Mae Bartel, and playing bass with Okra and the Universe. He’s actively writing, recording, and growing as an artist, aiming to leave a lasting mark on the local music scene and beyond.`
         ],
