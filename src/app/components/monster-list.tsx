@@ -163,6 +163,24 @@ const monsterList ={
         ytLink: "",
         bcLink: "",
     },
+    {
+        name: "Rench In the Works",
+        pics: ["rench-1", "rench-2", "rench-3", "rench-4", "rench-5"],
+        ogPic: "rench-og",
+        urlName: "rench-in-the-works",
+        bioText: [
+            `grew up with an eclectic musical upbringing, influenced by their parents’ road trips filled with everything from The Beatles and The Beach Boys to Frank Sinatra and Barry Manilow. In their adolescence, they discovered Def Leppard, Metallica, and punk, which shaped their musical philosophy: do what you want, and anything goes.`,
+            `Their sound blends early influences like Sinatra and The Beach Boys with punk icons like The Misfits and NOFX, as well as reggae and hip-hop from artists like Bob Marley and A Tribe Called Quest. Rench’s music reflects a wide range of genres, defying strict categorization.`,
+            `Throughout their journey, they have embraced the freedom of musical exploration, often mixing unexpected styles. Whether it's folk-inspired storytelling or punk energy, Rench ensures their sound remains distinct and dynamic.`,
+            `With roots in both performance and production, Rench continues to evolve, creating music that resonates across genres and generations. Their passion for music lies in crafting something meaningful, no matter the style or setting.`
+        ],
+        spotifyUrl: "",
+        fbLink: "https://www.facebook.com/search/top?q=rench%20in%20the%20works",
+        igLink: "https://www.instagram.com/rench.in.the.wrx/",
+        ttLink: "",
+        ytLink: "",
+        bcLink: "",
+    },
     // {
     //     name: "",
     //     pics: ["first-last-1", "first-last-2", "first-last-3", "first-last-4", "first-last-5"],
