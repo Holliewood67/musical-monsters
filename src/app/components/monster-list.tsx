@@ -181,6 +181,24 @@ const monsterList ={
         ytLink: "",
         bcLink: "",
     },
+    {
+        name: "Joey Carter",
+        pics: ["joey-carter-1", "joey-carter-2", "joey-carter-3", "joey-carter-4", "joey-carter-5", "joey-carter-6", "joey-carter-7", "joey-carter-8"],
+        ogPic: "joey-carter-og",
+        urlName: "joey-carter",
+        bioText: [
+            ` is a raw, unfiltered singer-songwriter blending folk, punk, blues, and dark country. Influenced by legends like Townes Van Zandt and Johnny Cash, his music is crafted to make listeners think and feel. Whether acoustic or full-band, his songs capture life’s struggles, triumphs, and hard truths.`,
+            `From playing lead guitar in a hardcore band at The Vanguard to performing at Tulsa’s open mic and songwriter nights, Joey has brought music to a variety of stages. However, one of the most powerful performances wasn’t at a traditional venue—it was at a rehabilitation facility in Florida. Playing for a room of strangers who were fighting their own battles, Joey saw firsthand how music could bring people together, offering comfort, laughter, and connection in a way that transcends location or circumstance.`,
+            `Every performance is played like it could be the last, carrying an intensity and authenticity that sets Joey apart. His songs are brutally honest, reflecting life’s struggles in a way that resonates deeply with audiences. With a focus on original music that challenges perspectives and evokes strong emotions, Joey’s presence on stage is both intimate and powerful, leaving listeners with something to carry long after the last note fades.`,
+            `Music has been part of Joey’s life since childhood, starting with the cowboy chords his grandfather taught him. From being dragged into nursing homes to play for lonely residents to finding his own voice through songwriting, music has always been more than just a passion—it’s a purpose. Now, Joey is working on his debut full-length album and continuing to play anywhere and everywhere, with the simple goal of making people feel something.`
+        ],
+        spotifyUrl: "",
+        fbLink: "https://www.facebook.com/profile.php?id=61567185576958",
+        igLink: "https://www.instagram.com/joeycarterandthenoshows/",
+        ttLink: "",
+        ytLink: "https://www.youtube.com/@JoeyandTheNoShows",
+        bcLink: "",
+    },
     // {
     //     name: "",
     //     pics: ["first-last-1", "first-last-2", "first-last-3", "first-last-4", "first-last-5"],
