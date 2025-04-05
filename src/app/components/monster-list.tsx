@@ -11,7 +11,7 @@ const monsterList ={
             `For the past 3 years, Ethan has been hosting open mics and showcases called "Musical Monsters," fostering a community of musicians and bringing new talent to the forefront. His experience in these settings has allowed him to develop a deep connection with audiences, making each performance memorable.`,
             `Known for his refined yet high-energy performances, Ethan knows how to engage an audience and keep them listening. Whether it’s an intimate venue or a lively bar, he’s ready to bring his passion for music to the stage, ensuring an experience that resonates with listeners.`
         ],
-        spotifyUrl: "3TrHIZ92sj1YvABKrcJTQE?utm_source=generator&theme=0",
+        spotifyUrl: "artist/3TrHIZ92sj1YvABKrcJTQE?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/ECMusician",
         igLink: "https://www.instagram.com/ethancantrellmusician/",
         ttLink: "https://www.tiktok.com/@ethancantrellmusician",
@@ -30,7 +30,7 @@ const monsterList ={
             `In addition to his solo career, Eric is an accomplished fiddle player and instructor. He teaches both classical violin and traditional Irish fiddle and has been an active participant in Irish music groups like Cairde na Gael. His expertise has led him to teach at various workshops and festivals, where he shares his passion for Irish music with others.`,
             `Whether performing solo or as part of a group, Eric Ryan-Johnson brings a rich blend of musical traditions to his work, making him a dynamic and influential figure in the Tulsa music scene.`
         ],
-        spotifyUrl: "2yh8yQClY7aQ4evzoAHzZ7?utm_source=generator&theme=0",
+        spotifyUrl: "artist/2yh8yQClY7aQ4evzoAHzZ7?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/ericryanjohnsonband",
         igLink: "https://www.instagram.com/e.ryanjohnson/",
         ttLink: "https://www.tiktok.com/@e.ryanjohnson",
@@ -48,7 +48,7 @@ const monsterList ={
             `Jeff's music is deeply personal, reflecting his own experiences and emotions, and he pours this raw energy into every performance. His songs resonate with authenticity, drawing listeners into the stories he tells through his lyrics and melodies.`,
             `Currently, Jeff is dedicated to improving his skills and working towards releasing his first album by the end of the year. His journey in music is just beginning, but his passion and commitment already make him a compelling force in the folk punk scene, leaving a lasting impact on everyone who hears him play.`
         ],
-        spotifyUrl: "7jV8Cj5bqsja5xOXainG8i?utm_source=generator&theme=0",
+        spotifyUrl: "artist/7jV8Cj5bqsja5xOXainG8i?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/profile.php?id=695022605",
         igLink: "",
         ttLink: "https://www.tiktok.com/@jefftrieshisbest",
@@ -102,7 +102,7 @@ const monsterList ={
             `Growing up with a deep connection to music, Vic's parents nurtured their passion by enrolling them in music programs. Moving to Tulsa was a pivotal moment, introducing them to a diverse music community where they felt right at home.`,
             `Vic’s current goal is to make music a full-time pursuit, using their art to inspire others. With multiple singles and albums ready to be recorded, they aim to turn their latest songwriting efforts into reality, reinvesting their earnings back into their craft.`
         ],
-        spotifyUrl: "2gmYgjnkhGHkx651qI4GiD?utm_source=generator",
+        spotifyUrl: "artist/2gmYgjnkhGHkx651qI4GiD?utm_source=generator",
         fbLink: "https://www.facebook.com/vicortegamusic",
         igLink: "https://www.instagram.com/vicortegamusic/",
         ttLink: "https://www.tiktok.com/@vicortegamusic",
@@ -120,7 +120,7 @@ const monsterList ={
             `His journey began at 14 when he saw a kid playing guitar and knew he had to do the same. Years later, after discovering Tash Sultana’s looping techniques, he transformed his sound, incorporating raw, unfiltered energy into every performance.`,
             `Always evolving, FrayTus continues to write, record, and push the boundaries of his music. With new releases on the horizon, he’s constantly innovating, proving that his artistry is just getting started.`
         ],
-        spotifyUrl: "6u6fD16y2MxAO3HZf3B1mZ?utm_source=generator&theme=0",
+        spotifyUrl: "artist/6u6fD16y2MxAO3HZf3B1mZ?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/FrayTus/",
         igLink: "https://www.instagram.com/fraytus/?hl=en",
         ttLink: "https://www.tiktok.com/@fraytus",
@@ -138,7 +138,7 @@ const monsterList ={
             `Starting with church and school choirs, Davaughnte discovered his passion for music in unexpected ways. Those early experiences prepared him for this journey, leading to moments when listeners first celebrated his natural talent.`,
             `With ambitions to be one of the greatest singer-songwriters, Davaughnte is constantly collaborating with Oklahoma artists. He’s gearing up to release a new single, finalize an EP, and work toward his ultimate goal: performing at Tulsa’s iconic BOK Center.`
         ],
-        spotifyUrl: "11ZrJczc8P1RNLllDln7S9?utm_source=generator",
+        spotifyUrl: "artist/11ZrJczc8P1RNLllDln7S9?utm_source=generator",
         fbLink: "https://www.facebook.com/profile.php?id=100084237335680",
         igLink: "https://www.instagram.com/dhill_music ",
         ttLink: "https://www.tiktok.com/@dhillmusicc",
@@ -156,7 +156,7 @@ const monsterList ={
             `Andre stands out with his loyal following, drawing crowds of friends and family who love his music and support his journey. Whether solo or in collaboration, his performances promise an engaging experience that resonates deeply with audiences.`,
             `Currently, Andre balances three projects: his solo acoustic shows, an acoustic duo Mae ‘N Dre with Mae Bartel, and playing bass with Okra and the Universe. He’s actively writing, recording, and growing as an artist, aiming to leave a lasting mark on the local music scene and beyond.`
         ],
-        spotifyUrl: "2HLDLV7SRwYxCp228iwoeK?utm_source=generator",
+        spotifyUrl: "artist/2HLDLV7SRwYxCp228iwoeK?utm_source=generator",
         fbLink: "https://www.facebook.com/andre.chisum",
         igLink: "https://www.instagram.com/andrechisummusic/",
         ttLink: "https://www.tiktok.com/@andrechisummusic?lang=en",
@@ -192,7 +192,7 @@ const monsterList ={
             `Every performance is played like it could be the last, carrying an intensity and authenticity that sets Joey apart. His songs are brutally honest, reflecting life’s struggles in a way that resonates deeply with audiences. With a focus on original music that challenges perspectives and evokes strong emotions, Joey’s presence on stage is both intimate and powerful, leaving listeners with something to carry long after the last note fades.`,
             `Music has been part of Joey’s life since childhood, starting with the cowboy chords his grandfather taught him. From being dragged into nursing homes to play for lonely residents to finding his own voice through songwriting, music has always been more than just a passion—it’s a purpose. Now, Joey is working on his debut full-length album and continuing to play anywhere and everywhere, with the simple goal of making people feel something.`
         ],
-        spotifyUrl: "",
+        spotifyUrl: "album/69ur6nprcAs5SQmBFGl8Y2?utm_source=generator",
         fbLink: "https://www.facebook.com/profile.php?id=61567185576958",
         igLink: "https://www.instagram.com/joeycarterandthenoshows/",
         ttLink: "",
