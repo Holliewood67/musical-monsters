@@ -7,6 +7,13 @@ export default function MonsterCard(
         imgPath: string,
         urlPath: string,
     }) {
+
+        if (!props.imgPath) {
+            return <div className="items-center justify-center">
+                        <h1>Loading...</h1>
+                    </div>;
+          }
+    
     return(
         <Link href={`/epk/${props.urlPath}`}>
             <div className="monster-card  rounded my-5 hover:scale-110">

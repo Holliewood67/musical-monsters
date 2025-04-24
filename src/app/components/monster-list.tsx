@@ -17,6 +17,7 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@ethancantrellmusician",
         ytLink: "https://www.youtube.com/channel/UC9fOxoEeGQmTzzXFTQEjqRA",
         bcLink: "",
+        ytVid: "XAvogeCobzs?si=QWjV65CUHvI5XYjK",
     },
     {
         name: "Eric Ryan-Johnson",
@@ -36,6 +37,7 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@e.ryanjohnson",
         ytLink: "https://www.youtube.com/channel/UC2glDyvuSE9Iyz6DwSRlWfA",
         bcLink: "https://ericryanjohnson.bandcamp.com",
+        ytVid: "YsqN4ouYla4?si=6S9R2cN19A1ui7C-",
     },
     {
         name: "Jeff Bush",
@@ -54,6 +56,7 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@jefftrieshisbest",
         ytLink: "",
         bcLink: "",
+        ytVid: "ULiVfDUhMwM?si=NvGiDqeOJL41N9Ht"
     },
     {
         name: "Chris Ray",
@@ -108,6 +111,7 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@vicortegamusic",
         ytLink: "",
         bcLink: "",
+        ytVid: "2MMQ4Ru19Ug?si=SL9YMcnhnu4vWXX8",
     },
     {
         name: "FrayTus",
@@ -126,6 +130,7 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@fraytus",
         ytLink: "https://www.youtube.com/channel/UChu86ZFfS3NiSEXufsQA-uw",
         bcLink: "",
+        ytVid: "WgIqtu5CMQI?si=y6uUNkpjcpih5eNl",
     },
     {
         name: "Davaughnte Hill",
@@ -144,6 +149,7 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@dhillmusicc",
         ytLink: "",
         bcLink: "",
+        ytVid: "EUY9jWSGBHU?si=A0KydkPhpcyC3kkG",
     },
     {
         name: "Andre Chisum",
@@ -162,6 +168,7 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@andrechisummusic?lang=en",
         ytLink: "",
         bcLink: "",
+        ytVid: "bXST0Xo_WWw?si=SauG5nip-5X0LXdx",
     },
     {
         name: "Rench In the Works",
@@ -198,6 +205,7 @@ const monsterList ={
         ttLink: "",
         ytLink: "https://www.youtube.com/@JoeyandTheNoShows",
         bcLink: "",
+        ytVid: "WxNjbQ25WPs?si=Jv1tlmjilWkvVA8N"
     },
     // {
     //     name: "",

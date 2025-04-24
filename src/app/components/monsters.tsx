@@ -26,6 +26,13 @@ export default function Monsters() {
         console.log(newMonsters)
     }, [])
 
+    if (!monsterList) {
+        return <div className="items-center justify-center">
+                    <h1>Loading...</h1>
+                </div>;
+      }
+
+
     return(
         <div className="border-t-2 border-yellow-400 p-4" id="monster-section">
             <div className="flex justify-center text-center pb-0 text-3xl">
