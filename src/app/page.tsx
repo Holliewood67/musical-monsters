@@ -16,6 +16,7 @@ export default function Home() {
         <Mission />
       </div>
       <Services />
+      <Events />
       <Monsters />
       {/* <Events /> */}
     </>

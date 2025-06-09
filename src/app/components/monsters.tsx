@@ -23,7 +23,6 @@ export default function Monsters() {
             }
 
         setMonsers(newMonsters);
-        console.log(newMonsters)
     }, [])
 
     if (!monsterList) {
