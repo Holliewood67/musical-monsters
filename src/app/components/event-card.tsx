@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 
 type Event = {
     id: string,
+    htmlLink: string,
     summary: string,
     description?: string,
     location?: string,
@@ -15,30 +17,81 @@ const googleDriveFix = (url: string) => {
   return match ? `https://drive.google.com/uc?export=view&id=${match[1]}` : url;
 };
 
+
 export default function EventCard ( { event }: { event: Event} ){
+
     const startDate = new Date(event.start.dateTime).toLocaleString('en-US', {
         dateStyle: 'full',
         timeStyle: 'short',
     });  
 
+    const imageUrlFull =
+    event.attachments && event.attachments.length > 0
+      ? googleDriveFix(event.attachments[0].fileUrl)
+      : null;
+
+    const imageUrlCropped =
+    event.attachments && event.attachments.length > 1
+      ? googleDriveFix(event.attachments[1].fileUrl)
+      : null;
+
+    const shortDescription = event.description
+    ? event.description.replace(/<[^>]+>/g, "").slice(0, 100) + "..."
+    : null;
+
     return(
-      <div className="bg-gray-900 border border-yellow-500 rounded-xl p-6 my-4 shadow-lg max-w-3xl w-full mx-auto text-left">
-        <h2 className="text-2xl font-bold text-yellow-400 mb-2">{event.summary}</h2>
+      // <div className="bg-gray-900 border border-yellow-500 rounded-xl p-6 my-4 shadow-lg max-w-3xl w-full mx-auto text-left">
+      //   <h2 className="text-2xl font-bold text-yellow-400 mb-2">{event.summary}</h2>
+      //   <p className="text-sm text-gray-400 mb-1">{startDate}</p>
+      //   {event.location && <p className="text-gray-300 mb-2">{event.location}</p>}
+      //   {event.description && (
+      //     <p className="text-gray-200 mb-2">{event.description.replace(/<[^>]+>/g, '')}</p>
+      //   )}
+
+      //   {event.attachments ? (
+      //     <Image
+      //     src={googleDriveFix(event.attachments[0].fileUrl)}
+      //     alt={event.attachments[0].title}
+      //     width={600}
+      //     height={800}
+      //     className="rounded mt-4 object-contain max-w-full h-auto"
+      //      />
+      //   ) : <p>no image</p>}
+      // </div>
+      <div className="bg-gray-800/25 border border-yellow-500 rounded-xl shadow-md overflow-hidden flex flex-col">
+      {imageUrlCropped && (
+        <Image
+          src={imageUrlCropped}
+          alt={event.attachments![0].title}
+          width={600}
+          height={600}
+          className="w-full max-h-64 object-cover"
+        />
+      )}
+
+      <div className="p-4 flex flex-col flex-grow">
+        <h2 className="text-xl font-bold text-yellow-400 mb-1">
+          {event.summary}
+        </h2>
         <p className="text-sm text-gray-400 mb-1">{startDate}</p>
-        {event.location && <p className="text-gray-300 mb-2">{event.location}</p>}
-        {event.description && (
-          <p className="text-gray-200 mb-2">{event.description.replace(/<[^>]+>/g, '')}</p>
+        {event.location && (
+          <p className="text-gray-300 mb-2">{event.location}</p>
         )}
 
-        {event.attachments ? (
-          <Image
-          src={googleDriveFix(event.attachments[0].fileUrl)}
-          alt={event.attachments[0].title}
-          width={600}
-          height={800}
-          className="rounded mt-4 object-contain max-w-full h-auto"
-           />
-        ) : <p>no image</p>}
+        {shortDescription && (
+          <p className="text-gray-200 text-sm mb-2 flex-grow">
+            {shortDescription}
+          </p>
+        )}
+
+        <Link
+          href={`/events/${event.id}`} // <- Update this to your actual blog route later
+          className="mt-auto text-yellow-400 text-sm font-semibold hover:underline rounded-xl bg-black mx-auto py-1 px-4"
+        >
+          Read more →
+        </Link>
       </div>
+    </div>
     )
+
 }
