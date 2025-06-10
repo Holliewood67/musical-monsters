@@ -17,6 +17,10 @@ const googleDriveFix = (url: string) => {
   return match ? `https://drive.google.com/uc?export=view&id=${match[1]}` : url;
 };
 
+// const getCroppedImage = (event: Event) {
+//   event.attachments?.includes('cropped')
+// }
+
 
 export default function EventCard ( { event }: { event: Event} ){
 
@@ -25,10 +29,6 @@ export default function EventCard ( { event }: { event: Event} ){
         timeStyle: 'short',
     });  
 
-    const imageUrlFull =
-    event.attachments && event.attachments.length > 0
-      ? googleDriveFix(event.attachments[0].fileUrl)
-      : null;
 
     const imageUrlCropped =
     event.attachments && event.attachments.length > 1
