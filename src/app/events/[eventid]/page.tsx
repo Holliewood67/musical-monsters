@@ -43,7 +43,12 @@ export default async function EventPage({ params }: Props) {
   const imageUrlFull =
     event.attachments && event.attachments.length > 0
       ? googleDriveFix(event.attachments[0].fileUrl)
-      : null;
+      : "/mm2.png";
+
+  const imgAlt = 
+    event.attachments && event.attachments.length > 0
+    ? event.attachments![0].title : "Musical Monsters";
+
 
   return (
     <div className="flex flex-col max-w-3xl mx-auto px-4 py-12 text-gray-100">

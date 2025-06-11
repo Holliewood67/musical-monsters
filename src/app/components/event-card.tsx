@@ -31,9 +31,20 @@ export default function EventCard ( { event }: { event: Event} ){
 
 
     const imageUrlCropped =
-    event.attachments && event.attachments.length > 1
-      ? googleDriveFix(event.attachments[1].fileUrl)
-      : null;
+  event.attachments && event.attachments.length > 0
+    ? (() => {
+        const index = event.attachments.findIndex(
+          (att) => att.title && att.title.toLowerCase().includes("cropped")
+        );
+        return index !== -1
+          ? googleDriveFix(event.attachments[index].fileUrl)
+          : "/mm2.png";
+      })()
+    : "/mm2.png";
+
+    const imgAlt = 
+    event.attachments && event.attachments.length > 0
+      ? event.attachments![0].title : "Musical Monsters";
 
     const shortDescription = event.description
     ? event.description.replace(/<[^>]+>/g, "").slice(0, 100) + "..."
@@ -62,10 +73,10 @@ export default function EventCard ( { event }: { event: Event} ){
       {imageUrlCropped && (
         <Image
           src={imageUrlCropped}
-          alt={event.attachments![0].title}
+          alt={imgAlt}
           width={600}
           height={600}
-          className="w-full max-h-64 object-cover"
+          className="w-full max-h-64 object-cover bg-black"
         />
       )}
 
