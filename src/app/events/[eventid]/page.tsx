@@ -42,8 +42,16 @@ export default async function EventPage({ params }: Props) {
 
   const imageUrlFull =
     event.attachments && event.attachments.length > 0
-      ? googleDriveFix(event.attachments[0].fileUrl)
-      : "/mm2.png";
+    ? (() => {
+        const index = event.attachments.findIndex(
+          // Check to see if the image filename contains the word full, if none present, revert to default mm2 image
+          (att) => att.title && att.title.toLowerCase().includes("full")
+        );
+        return index !== -1
+          ? googleDriveFix(event.attachments[index].fileUrl)
+          : null;
+      })()
+    : "/mm2.png";
 
   const imgAlt = 
     event.attachments && event.attachments.length > 0
@@ -51,20 +59,24 @@ export default async function EventPage({ params }: Props) {
 
 
   return (
-    <div className="flex flex-col max-w-3xl mx-auto px-4 py-12 text-gray-100">
-      <h1 className="text-3xl font-bold mb-2">{event.summary}</h1>
-      <p className="text-gray-400 mb-2">{startDate}</p>
-      {event.location && <p className="mb-4">{event.location}</p>}
-      {imageUrlFull && (
-        <Image
-          src={imageUrlFull}
-          alt={event.attachments?.[0]?.title || "Event flyer"}
-          width={400}
-          height={200}
-          className="rounded mb-6 justify-center items-center mx-auto"
-        />
-      )}
-      <p>{event.description}</p>
-    </div>
+    <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto  py-12 text-gray-100">
+      <div className="px-4">
+        <h1 className="text-3xl font-bold mb-2">{event.summary}</h1>
+        <p className="text-yellow-400 mb-2">{startDate}</p>
+        {event.location && <p className="mb-4">{event.location}</p>}
+        {imageUrlFull && (
+          <Image
+            src={imageUrlFull}
+            alt={event.attachments?.[0]?.title || "Event flyer"}
+            width={400}
+            height={200}
+            className="rounded mb-6 justify-center items-center mx-auto"
+          />
+        )}
+        </div>
+        <div>
+        <p className="text-xl border-t-2 border-yellow-400 px-4">{event.description}</p>
+      </div>
+    </section>
   );
 }

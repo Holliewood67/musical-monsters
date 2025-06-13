@@ -24,21 +24,21 @@ const googleDriveFix = (url: string) => {
 
 export default function EventCard ( { event }: { event: Event} ){
 
-    const startDate = new Date(event.start.dateTime).toLocaleString('en-US', {
-        dateStyle: 'full',
-        timeStyle: 'short',
-    });  
+  const startDate = new Date(event.start.dateTime).toLocaleString('en-US', {
+      dateStyle: 'full',
+      timeStyle: 'short',
+  });  
 
 
-    const imageUrlCropped =
-  event.attachments && event.attachments.length > 0
+  const imageUrlCropped =
+    event.attachments && event.attachments.length > 0
     ? (() => {
         const index = event.attachments.findIndex(
           (att) => att.title && att.title.toLowerCase().includes("cropped")
         );
         return index !== -1
           ? googleDriveFix(event.attachments[index].fileUrl)
-          : "/mm2.png";
+          : null;
       })()
     : "/mm2.png";
 
