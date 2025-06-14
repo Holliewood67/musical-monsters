@@ -59,8 +59,8 @@ export default async function EventPage({ params }: Props) {
 
 
   return (
-    <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto  py-12 text-gray-100">
-      <div className="px-4">
+    <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto  text-gray-100">
+      <div className="px-4 py-6">
         <h1 className="text-3xl font-bold mb-2">{event.summary}</h1>
         <p className="text-yellow-400 mb-2">{startDate}</p>
         {event.location && <p className="mb-4">{event.location}</p>}
@@ -70,12 +70,12 @@ export default async function EventPage({ params }: Props) {
             alt={event.attachments?.[0]?.title || "Event flyer"}
             width={400}
             height={200}
-            className="rounded mb-6 justify-center items-center mx-auto"
+            className="rounded  justify-center items-center mx-auto"
           />
         )}
         </div>
         <div>
-        <p className="text-xl border-t-2 border-yellow-400 px-4">{event.description}</p>
+        <p className="text-xl border-t-2 border-yellow-400 px-4 py-6">{event.description}</p>
       </div>
     </section>
   );
