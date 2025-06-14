@@ -13,7 +13,7 @@ export async function GET() {
 
     const timeMin = new Date().toISOString();
 
-    const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarID}/events?key=${apiKey}&timeMin=${timeMin}&singleEvents=true&orderBy=startTime`
+    const url = `https://www.googleapis.com/calendar/v3/calendars/${calendarID}/events?key=${apiKey}&timeMin=${timeMin}&singleEvents=true&orderBy=startTime&showDeleted=false`
     console.log("Fetching from Google Calendar:", url);
 
     try {
