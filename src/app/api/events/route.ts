@@ -17,7 +17,7 @@ export async function GET() {
     console.log("Fetching from Google Calendar:", url);
 
     try {
-        const res = await fetch(url);
+        const res = await fetch(url, { cache: "no-store" });
 
         if(!res.ok) {
             return new Response(
