@@ -27,7 +27,11 @@ export async function GET() {
         }
         const data = await res.json();
         return new Response(JSON.stringify(data.items), {
-            headers: { "Content-Type": "application/json" },
+            headers: { 
+                "Content-Type": "application/json",
+                //Prevent deployed site from caching first calendar resposne
+                "Cache-Control": "no-store", 
+            },
             status: 200,
         });
     } catch (err) {
