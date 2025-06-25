@@ -91,6 +91,7 @@ export default async function EventPage({ params }: Props) {
   const startDate = new Date(event.start.dateTime).toLocaleString("en-US", {
     dateStyle: "full",
     timeStyle: "short",
+    timeZone: "America/Chicago",
   });
 
   const imageUrlFull =
