@@ -17,11 +17,6 @@ const googleDriveFix = (url: string) => {
   return match ? `https://drive.google.com/uc?export=view&id=${match[1]}` : url;
 };
 
-// const getCroppedImage = (event: Event) {
-//   event.attachments?.includes('cropped')
-// }
-
-
 export default function EventCard ( { event }: { event: Event} ){
 
   const startDate = new Date(event.start.dateTime).toLocaleString('en-US', {
