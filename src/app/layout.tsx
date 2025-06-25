@@ -4,7 +4,6 @@ import { Lacquer } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./components/navbar";
 import Footer from "./components/footer";
-import ogImage from "../../public/mm.png"
 
 const inter = Inter({ subsets: ["latin"] });
 const lacquer = Lacquer({ subsets: ["latin"], weight: "400" });
