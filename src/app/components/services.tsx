@@ -2,7 +2,7 @@ import ServiceCard from "./service-card";
 
 export default function Services() {
     return(
-        <div className="items-center justify-center text-center p-5">
+        <div className="items-center justify-center text-center p-5 border-b-2 border-yellow-400">
             <div className="text-3xl mb-4">
                 <h1>What We Do</h1>
             </div>

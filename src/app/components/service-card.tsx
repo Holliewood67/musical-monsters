@@ -1,4 +1,11 @@
 import Image from "next/image"
+import { Irish_Grover } from "next/font/google"
+
+const altFont = Irish_Grover({
+    subsets: ['latin'],
+    weight: ['400'], 
+})
+
 
 export default function ServiceCard(
     props: {
@@ -14,7 +21,7 @@ export default function ServiceCard(
             </div>
             <div className="text-black ">
                 <h1 className="text-xl border-t-2 border-black p-2">{props.title}</h1>
-                <h3 className="border-t-2 border-black py-2 text-start leading-relaxed">{props.content}</h3>
+                <h3 className={`${altFont.className} border-t-2 border-black py-2 text-start leading-relaxed`}>{props.content}</h3>
             </div>
         </div>
 

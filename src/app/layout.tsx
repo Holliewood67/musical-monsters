@@ -1,12 +1,16 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Lacquer } from "next/font/google";
+import { Metal_Mania } from "next/font/google";
 import "./globals.css";
 import NavigationBar from "./components/navbar";
 import Footer from "./components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const lacquer = Lacquer({ subsets: ["latin"], weight: "400" });
+const metal = Metal_Mania({
+  subsets: ['latin'],
+  weight: ['400'], 
+})
+
 
 export const metadata = {
   title: "Musical Monsters - Tulsa",
@@ -39,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={lacquer.className}>
+      <body className={metal.className}>
         <NavigationBar />
         {children}
         <Footer />

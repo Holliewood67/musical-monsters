@@ -1,6 +1,5 @@
-import WelcomeHeader from "./components/welcome-header";
+import Hero from "./components/hero";
 import Monsters from "./components/monsters";
-import Mission from "./components/mission";
 import Services from "./components/services";
 import News from "./components/news";
 import Events from "./components/events";
@@ -10,15 +9,11 @@ import Events from "./components/events";
 export default function Home() {
   return (
     <>
-      <WelcomeHeader />
+      <Hero />
       {/* <News /> */}
-      <div className="md:hidden">
-        <Mission />
-      </div>
       <Services />
       <Events />
       <Monsters />
-      {/* <Events /> */}
     </>
   );
 }

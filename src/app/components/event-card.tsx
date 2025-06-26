@@ -1,5 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Irish_Grover } from "next/font/google";
+
+const altFont = Irish_Grover({
+    subsets: ['latin'],
+    weight: ['400'], 
+})
+
 
 type Event = {
     id: string,
@@ -46,7 +53,7 @@ export default function EventCard ( { event }: { event: Event} ){
     : null;
 
     return(
-      <div className="bg-gray-800/25 h-full border border-yellow-500 rounded-xl shadow-md overflow-hidden flex flex-col">
+      <div className="bg-gray-900/25 h-full border border-yellow-500 rounded-xl shadow-md overflow-hidden flex flex-col">
       {imageUrlCropped && (
         <Image
           src={imageUrlCropped}
@@ -63,11 +70,11 @@ export default function EventCard ( { event }: { event: Event} ){
         </h2>
         <p className="text-sm text-gray-400 mb-1">{startDate}</p>
         {event.location && (
-          <p className="text-gray-300 mb-2">{event.location}</p>
+          <p className={`${altFont.className} text-gray-300 mb-2`}>{event.location}</p>
         )}
 
         {shortDescription && (
-          <p className="text-gray-200 text-sm mb-2 flex-grow">
+          <p className={`${altFont.className} text-gray-200 text-sm mb-2 flex-grow`}>
             {shortDescription}
           </p>
         )}
