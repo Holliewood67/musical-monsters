@@ -53,12 +53,16 @@ export async function generateMetadata(
         })()
       : null;
 
+    const descriptionFix = event.description
+    ? event.description.replace(/<[^>]+>/g, "")
+    : null;
+
   return {
     title: `${event.summary} | Musical Monsters`,
-    description: event.description || "Catch the latest local music events with Musical Monsters.",
+    description: descriptionFix || "Catch the latest local music events with Musical Monsters.",
     openGraph: {
       title: `${event.summary} | Musical Monsters`,
-      description: event.description || "Live local music and community events hosted by Musical Monsters.",
+      description: descriptionFix || "Live local music and community events hosted by Musical Monsters.",
       url: `https://www.musicalmonsterstulsa.com/events/${event.id}`,
       siteName: "Musical Monsters",
       images: imageUrlFull
@@ -111,6 +115,10 @@ export default async function EventPage({ params }: Props) {
       ? event.attachments![0].title
       : "Musical Monsters";
 
+    const descriptionFix = event.description
+  ? event.description.replace(/<[^>]+>/g, "")
+  : null;
+
   return (
     <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto text-gray-100">
       <div className="px-4 py-6">
@@ -129,7 +137,7 @@ export default async function EventPage({ params }: Props) {
       </div>
       <div>
         <p className="text-xl border-t-2 border-yellow-400 px-4 py-6 whitespace-pre-line">
-          {event.description}
+          {descriptionFix}
         </p>
       </div>
     </section>
