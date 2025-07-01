@@ -207,6 +207,24 @@ const monsterList ={
         bcLink: "",
         ytVid: "WxNjbQ25WPs?si=Jv1tlmjilWkvVA8N"
     },
+    {
+        name: "Ian Griffith",
+        pics: ["ian-griffith-1", "ian-griffith-2", "ian-griffith-3", "ian-griffith-4", "ian-griffith-5"],
+        ogPic: "ian-griffith-og",
+        urlName: "ian-griffith",
+        bioText: [
+            `Ian Griffith is an acoustic singer-songwriter with a raw, emotional sound shaped by grunge and 90s alt-rock. Influenced by artists like Weezer, Foo Fighters, Corey Taylor, and Jars of Clay, he blends heavy inspiration with stripped-down arrangements to create something deeply personal and powerful.`,
+            `He’s performed across the Tulsa area, including a standout set opening for comedian Andy Dick at Geaux Theaters in Broken Arrow. Whether at open mics or booked gigs, Ian brings a commanding voice and emotional depth that captivates audiences and leaves a lasting impression.`,
+            `Inspired by his father’s love of songwriting, Ian began writing music at 18 and quickly realized he couldn’t let his own songs go unheard. He believes deeply in the power of lyrics and emotional honesty, using his music to connect with others on a real and vulnerable level.`,
+            `Ian is currently preparing to release his second single, Heaven Knows, on July 10th, 2025, while growing his audience through TikTok and YouTube. With plans to release a full album by the end of the year, he’s focused on turning open mic nights into a sustainable music career—and eventually reaching listeners around the world.`
+        ],
+        spotifyUrl: "artist/3g5QFDyschekv0LARETVEQ?utm_source=generator",
+        fbLink: "https://www.facebook.com/iangriff10",
+        igLink: "",
+        ttLink: "https://www.tiktok.com/@iangriffith10",
+        ytLink: "",
+        bcLink: "",
+    },
     // {
     //     name: "",
     //     pics: ["first-last-1", "first-last-2", "first-last-3", "first-last-4", "first-last-5"],
