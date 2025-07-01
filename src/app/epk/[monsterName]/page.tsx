@@ -4,6 +4,7 @@ import Releases from "@/app/components/spotify-releases"
 import { Metadata, ResolvingMetadata } from "next"
 import SocialMedia from "@/app/components/social-media"
 import YoutubeEmbed from "@/app/components/youtube-embed"
+import EPKEvents from "@/app/components/epk-events"
 
 type Props = {
     params: { monsterName: string }
@@ -48,6 +49,7 @@ export default function EPK({
     return( 
         <div>
             <EPKBio monster={monster} />
+            <EPKEvents monster={monster} />
             {monster?.ytVid ? <YoutubeEmbed monster={monster} /> : <></> }
             {monster?.spotifyUrl ? <Releases monster={monster} /> : <></>}
             <SocialMedia monster={monster} />

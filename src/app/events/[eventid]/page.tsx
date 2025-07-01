@@ -1,5 +1,12 @@
 import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
+import { Irish_Grover } from "next/font/google"
+
+const altFont = Irish_Grover({
+    subsets: ['latin'],
+    weight: ['400'], 
+})
+
 
 const googleDriveFix = (url: string) => {
   const match = url.match(/id=([^&]+)/);
@@ -136,7 +143,7 @@ export default async function EventPage({ params }: Props) {
         )}
       </div>
       <div>
-        <p className="text-xl border-t-2 border-yellow-400 px-4 py-6 whitespace-pre-line">
+        <p className={`${altFont.className} text-xl border-t-2 border-yellow-400 px-4 py-6 whitespace-pre-line`}>
           {descriptionFix}
         </p>
       </div>
