@@ -45,3 +45,8 @@ body {
 .text-shadow {
   text-shadow: 1px 2px 0 #000;;
 }
+
+.event-link a {
+color: rgb(250 204 21);
+text-decoration: underline;
+}
