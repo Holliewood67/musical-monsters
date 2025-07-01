@@ -25,7 +25,7 @@ export default function NavigationBar(){
                                 <ul className="flex w-full justify-around lg:justify-normal gap-6 lg:gap-10">
                                     <li className="my-2 py-2 "><Link href={"/"} className="text-yellow-400 hover:text-gray-700">Home</Link></li>
                                     <li className="my-2 py-2 "><Link href={"/#monster-section"} className="text-yellow-400 hover:text-gray-700">Monsters</Link></li>
-                                    <li className="my-2 py-2 "><Link href={"/events"} className="text-yellow-400 hover:text-gray-700">Events</Link></li>
+                                    <li className="my-2 py-2 "><Link href={"/events"} className="text-yellow-400 hover:text-gray-700">Events</Link></li> {/* <-- Thank you to Jeff for reminding me on this*/}
                                     <li className="my-2 py-2 "><a href={"https://ko-fi.com/musicalmonsters/shop"} target="_blank" className="text-yellow-400 hover:text-gray-700">Shop</a></li>
                                     <li className="my-2 py-2"><a href={"https://mail.google.com/mail/?view=cm&fs=1&to=musicalmonsterstulsa@gmail.com&su=SUBJECT&body=BODY"}  target="_blank"className="text-yellow-400 hover:text-gray-700">Contact</a></li>
                                 </ul>
