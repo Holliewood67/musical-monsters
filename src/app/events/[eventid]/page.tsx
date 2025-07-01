@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { Irish_Grover } from "next/font/google"
-
+import sanitize from "sanitize-html";
 const altFont = Irish_Grover({
     subsets: ['latin'],
     weight: ['400'], 
@@ -61,7 +61,15 @@ export async function generateMetadata(
       : null;
 
     const descriptionFix = event.description
-    ? event.description.replace(/<[^>]+>/g, "")
+    ? sanitize(event.description, {
+      allowedTags: ["a", "br", "strong", "em", "b", "i", "u"],
+      allowedAttributes: {
+        a: ["href", "target", "rel"],
+      },
+      transformTags: {
+        a: sanitize.simpleTransform("a", { target: "_blank", rel: "noopener noreferrer"}),
+      },
+    })
     : null;
 
   return {
@@ -123,8 +131,16 @@ export default async function EventPage({ params }: Props) {
       : "Musical Monsters";
 
     const descriptionFix = event.description
-  ? event.description.replace(/<[^>]+>/g, "")
-  : null;
+    ? sanitize(event.description, {
+      allowedTags: ["a", "br", "strong", "em", "b", "i", "u"],
+      allowedAttributes: {
+        a: ["href", "target", "rel"],
+      },
+      transformTags: {
+        a: sanitize.simpleTransform("a", { target: "_blank", rel: "noopener noreferrer"}),
+      },
+    })
+    : null;
 
   return (
     <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto text-gray-100">
@@ -143,9 +159,12 @@ export default async function EventPage({ params }: Props) {
         )}
       </div>
       <div>
-        <p className={`${altFont.className} text-xl border-t-2 border-yellow-400 px-4 py-6 whitespace-pre-line`}>
-          {descriptionFix}
-        </p>
+          {descriptionFix && (
+          <div
+            className={`${altFont.className} text-xl border-t-2 border-yellow-400 px-4 py-6 whitespace-pre-line`}
+            dangerouslySetInnerHTML={{ __html: descriptionFix }}
+          />
+          )}
       </div>
     </section>
   );
