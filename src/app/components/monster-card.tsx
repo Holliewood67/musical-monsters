@@ -16,7 +16,7 @@ export default function MonsterCard(
     
     return(
         <Link href={`/epk/${props.urlPath}`}>
-            <div className="monster-card  rounded my-5 hover:scale-110">
+            <div className="monster-card  rounded my-5 hover:scale-105 transition ease-out duration-300">
                 <div className="monster-card-img">
                     <Image className="rounded-3xl" src={`/epkpics/${props.imgPath}`} alt="Ethan Cantrell" width={800} height={1000} />
                 </div>

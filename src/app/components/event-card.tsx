@@ -53,7 +53,7 @@ export default function EventCard ( { event }: { event: Event} ){
     : null;
 
     return(
-      <div className="bg-gray-900/25 h-full border border-yellow-500 rounded-xl shadow-md overflow-hidden flex flex-col">
+      <div className="bg-gray-900/25 h-full border border-yellow-500 rounded-xl shadow-md overflow-hidden flex flex-col hover:scale-105 transition ease-out duration-300">
       {imageUrlCropped && (
         <Image
           src={imageUrlCropped}

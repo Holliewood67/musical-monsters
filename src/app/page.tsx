@@ -4,13 +4,10 @@ import Services from "./components/services";
 import News from "./components/news";
 import Events from "./components/events";
 
-
-
 export default function Home() {
   return (
     <>
       <Hero />
-      {/* <News /> */}
       <Services />
       <Events />
       <Monsters />
