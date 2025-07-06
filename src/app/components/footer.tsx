@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="border-t-2 border-yellow-400 bg-gray-900/25 text-gray-300 px-4 py-6 mt-16 text-sm">
+    <footer className="border-t-2 border-yellow-400 bg-gray-900/25 text-gray-300 px-4 py-6 text-sm">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6">
 
         {/* Left: Brand Info */}

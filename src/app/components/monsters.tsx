@@ -31,7 +31,7 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
     if (mouseOver) return
     timeout = setTimeout(() => {
       slider.next()
-    }, 5000) // change slide every 3s
+    }, 100) // slide change timer
   }
 
   slider.on("created", () => {
@@ -59,6 +59,9 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
       spacing: 20,
       origin: "center", // ensures center card is fully shown
     },
+    defaultAnimation: {
+    duration: 3000, // works only for navigation buttons and when clicking on gallery thumbnails, but not when swiping
+  },
     breakpoints: {
       "(min-width: 768px)": {
         slides: {
@@ -88,12 +91,25 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
   }
 
   return (
-    <section className="border-t-2 border-yellow-400 py-6" id="monster-section">
-      <div className="text-3xl text-center pb-6">
+    <section className="relative border-t-2 border-yellow-400" id="monster-section">
+      {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute z-0 inset-0 w-full h-full object-cover opacity-100"
+      >
+        <source src="/videos/monster-bg.mp4" type="video/mp4" />
+      </video>
+
+      {/* Content Layer */}
+      <div className="relative z-10">
+      <div className="text-3xl text-center py-6">
         <h1>Meet The Monsters</h1>
       </div>
       <div className="mx-auto overflow-hidden">
-      <div className="relative w-full overflow-hidden">
+      <div className="w-full overflow-hidden">
         {/* Left Gradient */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-16 md:w-32 bg-gradient-to-r from-black to-transparent z-10" />
 
@@ -101,7 +117,7 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
         <div className="pointer-events-none absolute right-0 top-0 h-full wd-16 md:w-32 bg-gradient-to-l from-black to-transparent z-10" />
 
         {/* Slider */}
-        <div ref={sliderRef} className="keen-slider">
+        <div ref={sliderRef} className="keen-slider pb-6">
           {monsters.map((monster, i) => (
             <div key={i} className="keen-slider__slide">
               <MonsterCard
@@ -115,6 +131,7 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
           ))}
         </div>
       </div>
+     </div>
      </div>
     </section>
   )
