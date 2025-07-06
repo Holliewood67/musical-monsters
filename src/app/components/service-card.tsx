@@ -15,13 +15,19 @@ export default function ServiceCard(
     }
 ) {
     return(
-        <div className="service-card my-2 bg-yellow-500 rounded p-5 md:w-[50%] lg:text-xl">
+        <div className="bg-yellow-400 backdrop-blur-sm border-2 border-yellow-400/30 rounded-2xl p-6 shadow-xl hover:scale-[1.02] transition-all duration-200 ease-in-out service-card">
             <div  className="flex justify-center">
-                <Image width={100} height={100} src={`./logos/${props.icon}.svg`} alt={props.title} />
+                <Image 
+                    width={100} 
+                    height={100} 
+                    src={`./logos/${props.icon}.svg`} 
+                    alt={props.title} 
+                    className="drop-shadow-lg spinner"
+                />
             </div>
-            <div className="text-black ">
-                <h1 className="text-xl border-t-2 border-black p-2">{props.title}</h1>
-                <h3 className={`${altFont.className} border-t-2 border-black py-2 text-start leading-relaxed`}>{props.content}</h3>
+            <div className="text-black mt-4">
+                <h2 className="text-2xl font-bold border-b border-black pb-2 mb-2">{props.title}</h2>
+                <p className={`${altFont.className} text-left leading-relaxed text-lg`}>{props.content}</p>
             </div>
         </div>
 

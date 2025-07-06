@@ -43,10 +43,31 @@ body {
 }
 
 .text-shadow {
-  text-shadow: 1px 2px 0 #000;;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .event-link a {
 color: rgb(250 204 21);
 text-decoration: underline;
 }
+
+@keyframes service-spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.spinner{
+  transform: rotate(0deg);
+  transition: transform 1s ease
+}
+
+.service-card:hover .spinner {
+  animation: service-spin 1s ease-in-out 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+

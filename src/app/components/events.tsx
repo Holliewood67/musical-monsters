@@ -70,7 +70,7 @@ export default function Events() {
       {hasMoreEvents && (
         <button
           onClick={handleShowMore}
-          className="mt-6 px-6 py-2 border border-white rounded-full text-white hover:bg-white hover:text-black transition"
+          className="mt-6 px-6 py-2 border border-yellow-400 rounded-full text-yellow-400 hover:bg-yellow-400 hover:text-black transition duration-300"
         >
           Show More
         </button>

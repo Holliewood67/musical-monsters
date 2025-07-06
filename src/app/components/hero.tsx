@@ -26,15 +26,15 @@ export default function Hero() {
 
       {/* Content Layer */}
       <div className="relative z-10 max-w-3xl">
-        <h1 className="text-3xl md:text-5xl text-yellow-400 font-bold mb-4">
+        <h1 className="text-3xl md:text-5xl text-yellow-400 font-bold mb-4 text-shadow">
           Welcome to the home of Ethan Cantrell&apos;s Musical Monsters
         </h1>
 
         <div className={`${altFont.className} text-lg md:text-2xl text-gray-100`}>
-          <p className="mb-4">
+          <p className="mb-4 text-shadow">
             Our mission is to provide independent musicians with the tools to take the next step in their musical journey at a reasonable cost.
           </p>
-          <p className="text-yellow-400">
+          <p className="text-yellow-400 text-shadow">
             We aim to remove the financial barrier to creative success for indie artists in order to help make establishing a career in music accessible to everyone.
           </p>
         </div>

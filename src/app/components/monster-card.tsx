@@ -16,12 +16,16 @@ export default function MonsterCard(
     
     return(
         <Link href={`/epk/${props.urlPath}`}>
-            <div className="monster-card  rounded my-5 hover:scale-105 transition ease-out duration-300">
-                <div className="monster-card-img">
-                    <Image className="rounded-3xl" src={`/epkpics/${props.imgPath}`} alt="Ethan Cantrell" width={800} height={1000} />
-                </div>
-                <div className=" text-white flex items-center justify-center">
-                    <h1 className="flex justify-center text-2xl p-2 w-full  bg-yellow-400 my-2  border-2 border-black border-rounded rounded-full text-black">{props.monsterName}</h1>
+            <div className="rounded-3xl  border-2 border-yellow-400/50 max-2-sm">
+                <div>
+                    <Image 
+                        className="rounded-t-3xl" 
+                        src={`/epkpics/${props.imgPath}`} 
+                        alt="Ethan Cantrell" 
+                        width={800} 
+                        height={1000} 
+                    />
+                    <h1 className="flex justify-center text-2xl  w-full  bg-yellow-400  rounded-b-xl text-black drop-shadow-lg">{props.monsterName}</h1>
                 </div>
             </div>
         </Link>
