@@ -110,14 +110,8 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
       </div>
       <div className="mx-auto overflow-hidden">
       <div className="w-full overflow-hidden">
-        {/* Left Gradient */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-16 md:w-32 bg-gradient-to-r from-black to-transparent z-10" />
-
-        {/* Right Gradient */}
-        <div className="pointer-events-none absolute right-0 top-0 h-full wd-16 md:w-32 bg-gradient-to-l from-black to-transparent z-10" />
-
         {/* Slider */}
-        <div ref={sliderRef} className="keen-slider pb-6">
+        <div ref={sliderRef} className="keen-slider pb-12">
           {monsters.map((monster, i) => (
             <div key={i} className="keen-slider__slide">
               <MonsterCard
