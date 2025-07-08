@@ -13,5 +13,6 @@ export function sanitizeDescription(html: string): string {
 }
 
 export function sanitizeOGDescription(html: string): string {
-  return sanitize(html);
+  const noTags = sanitize(html, { allowedTags: [], allowedAttributes: {} });
+  return noTags.replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').trim();
 }

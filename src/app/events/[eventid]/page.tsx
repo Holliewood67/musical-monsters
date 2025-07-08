@@ -125,6 +125,8 @@ export default async function EventPage({ params }: Props) {
     const descriptionFix = event.description
     ? sanitizeDescription(event.description)
     : null;
+    
+    console.log(sanitizeOGDescription);
 
   return (
     <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto text-gray-100">
