@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { Irish_Grover } from "next/font/google"
-import sanitize from "sanitize-html";
-import { sanitizeDescription } from "@/app/lib/sanitize-html";
-import { div } from "framer-motion/client";
+import { sanitizeDescription, sanitizeOGDescription } from "@/app/lib/sanitize-html";
 const altFont = Irish_Grover({
     subsets: ['latin'],
     weight: ['400'], 
@@ -30,7 +28,7 @@ type Event = {
   attachments?: { fileUrl: string; title: string }[];
 };
 
-// 🧠 Metadata for Facebook OG tags
+// Metadata for Facebook OG tags
 export async function generateMetadata(
   { params }: Props,
   _parent: ResolvingMetadata
@@ -63,7 +61,7 @@ export async function generateMetadata(
       : null;
 
     const descriptionFix = event.description
-    ? sanitizeDescription(event.description)
+    ? sanitizeOGDescription(event.description)
     : null;
 
   return {

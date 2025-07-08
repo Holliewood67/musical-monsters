@@ -11,3 +11,7 @@ export function sanitizeDescription(html: string): string {
     },
   });
 }
+
+export function sanitizeOGDescription(html: string): string {
+  return sanitize(html);
+}
