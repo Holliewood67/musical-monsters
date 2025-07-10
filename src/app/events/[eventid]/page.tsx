@@ -118,16 +118,14 @@ export default async function EventPage({ params }: Props) {
       : "/mm2.png";
 
   const imgAlt =
-    event.attachments && event.attachments.length > 0
-      ? event.attachments![0].title
-      : "Musical Monsters";
+  event.attachments && event.attachments.length > 0
+    ? event.attachments![0].title
+    : "Musical Monsters";
 
-    const descriptionFix = event.description
+  const descriptionFix = event.description
     ? sanitizeDescription(event.description)
     : null;
-    
-    console.log(sanitizeOGDescription);
-
+  
   return (
     <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto text-gray-100">
       <div className="px-4 py-6">

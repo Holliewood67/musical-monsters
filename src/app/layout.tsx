@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import { Metal_Mania } from "next/font/google";
 import "./globals.css";
@@ -43,6 +43,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-P1GGFV7Y6Q"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-P1GGFV7Y6Q');
+  `}
+</Script>
       <body className={metal.className}>
         <NavigationBar />
         {children}
