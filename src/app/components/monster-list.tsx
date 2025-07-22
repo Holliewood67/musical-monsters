@@ -225,6 +225,24 @@ const monsterList ={
         ytLink: "",
         bcLink: "",
     },
+    {
+        name: "Elzie B. Hickerson",
+        pics: ["elzie-b-hickerson-1", "elzie-b-hickerson-2", "elzie-b-hickerson-3", "elzie-b-hickerson-4", "elzie-b-hickerson-5"],
+        ogPic: "elzie-b-hickerson-og",
+        urlName: "elzie-b-hickerson",
+        bioText: [
+            `is a singer-songwriter from Oklahoma whose music reflects a life full of stories, emotion, and exploration. His songwriting spans genres, drawing from folk, Americana, rock, and anything else that speaks to the heart.`,
+            `Growing up on artists like James Taylor, The Beatles, Neil Young, and Van Morrison, he learned early that great songs don’t have to fit into a single box. That spirit of musical freedom continues to guide his sound today.`,
+            `Each song he writes captures a moment, a feeling, or a person who shaped his journey. His music feels both personal and familiar—like something pulled from your own memories.`,
+            `Whether performing live or sharing recordings, Elzie invites listeners into a shared space of reflection and connection. His goal is simple: to write songs that resonate with your story as much as they do with his.`
+        ],
+        spotifyUrl: "artist/6boCzAhpSYT7a4OkXcIykq?utm_source=generator",
+        fbLink: "https://www.facebook.com/elzie.b.hickerson",
+        igLink: "https://www.instagram.com/elziebhickerson",
+        ttLink: "https://www.tiktok.com/@elziebhickerson?is_from_webapp=1&sender_device=pc",
+        ytLink: "https://www.youtube.com/@elziebhickerson",
+        bcLink: "",
+    },
     // {
     //     name: "",
     //     pics: ["first-last-1", "first-last-2", "first-last-3", "first-last-4", "first-last-5"],
