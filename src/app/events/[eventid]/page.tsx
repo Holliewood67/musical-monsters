@@ -48,17 +48,17 @@ export async function generateMetadata(
 
   const event: Event = await res.json();
 
-  const imageUrlFull =
+  const imageUrlCropped =
     event.attachments && event.attachments.length > 0
-      ? (() => {
-          const index = event.attachments.findIndex(
-            (att) => att.title && att.title.toLowerCase().includes("full")
-          );
-          return index !== -1
-            ? googleDriveFix(event.attachments[index].fileUrl)
-            : null;
-        })()
-      : null;
+    ? (() => {
+        const index = event.attachments.findIndex(
+          (att) => att.title && att.title.toLowerCase().includes("cropped")
+        );
+        return index !== -1
+          ? googleDriveFix(event.attachments[index].fileUrl)
+          : null;
+      })()
+    : "/mm2.png";
 
     const descriptionFix = event.description
     ? sanitizeOGDescription(event.description)
@@ -72,10 +72,10 @@ export async function generateMetadata(
       description: descriptionFix || "Live local music and community events hosted by Musical Monsters.",
       url: `https://www.musicalmonsterstulsa.com/events/${event.id}`,
       siteName: "Musical Monsters",
-      images: imageUrlFull
+      images: imageUrlCropped
         ? [
             {
-              url: imageUrlFull,
+              url: imageUrlCropped,
               width: 800,
               height: 600,
             },
