@@ -35,8 +35,8 @@ export default function NavigationBar(){
                 <div className={` ${!open && "hidden"} p-4 w-full border-b-2 border-yellow-400`} id="navbar-default">
                     <nav>
                         <ul>
-                            <li className="my-2 py-2 border-b-2 border-yellow-600"><Link href={"#"} className="text-yellow-400 hover:text-gray-700">Home &rarr;</Link></li>
-                            <li className="my-2 py-2 border-b-2 border-yellow-600"><Link href={"#monster-section"} className="text-yellow-400 hover:text-gray-700">Monsters &rarr;</Link></li>
+                            <li className="my-2 py-2 border-b-2 border-yellow-600"><Link href={"/#"} className="text-yellow-400 hover:text-gray-700">Home &rarr;</Link></li>
+                            <li className="my-2 py-2 border-b-2 border-yellow-600"><Link href={"/#monster-section"} className="text-yellow-400 hover:text-gray-700">Monsters &rarr;</Link></li>
                             <li className="my-2 py-2 border-b-2 border-yellow-600"><Link href={"/events"} className="text-yellow-400 hover:text-gray-700">Events &rarr;</Link></li>
                             <li className="my-2 py-2 "><a href={"https://ko-fi.com/musicalmonsters/shop"} target="_blank" className="text-yellow-400 hover:text-gray-700">Shop &rarr;</a></li>
                             <li className="my-2 py-2"><a href={"https://mail.google.com/mail/?view=cm&fs=1&to=musicalmonsterstulsa@gmail.com&su=SUBJECT&body=BODY"}  target="_blank" className="text-yellow-400 hover:text-gray-700">Contact &rarr;</a></li>

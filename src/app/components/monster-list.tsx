@@ -5,12 +5,7 @@ const monsterList ={
         pics: ["ethan-cantrell-1", "ethan-cantrell-2","ethan-cantrell-3", "ethan-cantrell-4", "ethan-cantrell-5"],
         ogPic: "ethan-cantrell-og",
         urlName: "ethan-cantrell",
-        bioText: [
-            `delivers an acoustic blend of folk and punk, infused with ska and reggae sensibilities. His music is shaped by influences such as Green Day, Woody Guthrie, Streetlight Manifesto, and Pat the Bunny, creating a sound that's both unique and dynamic.`,
-            `With 15 years of experience in playing music and running sound, Ethan has honed his craft both on stage and behind the scenes. His dedication to the art extends to the studio, where he has been producing music for the past 7 years, refining the sounds that define his style.`,
-            `For the past 3 years, Ethan has been hosting open mics and showcases called "Musical Monsters," fostering a community of musicians and bringing new talent to the forefront. His experience in these settings has allowed him to develop a deep connection with audiences, making each performance memorable.`,
-            `Known for his refined yet high-energy performances, Ethan knows how to engage an audience and keep them listening. Whether it’s an intimate venue or a lively bar, he’s ready to bring his passion for music to the stage, ensuring an experience that resonates with listeners.`
-        ],
+        bioText: 'delivers an acoustic blend of folk and punk infused with ska and reggae, shaped by influences like Green Day, Woody Guthrie, Streetlight Manifesto, and Pat the Bunny. With over 15 years of experience performing, running sound, and producing music, he has built a style that is both unique and dynamic. For the past three years, he has also hosted “Musical Monsters,” fostering a community of local musicians while connecting deeply with audiences through his refined yet high-energy performances.',
         spotifyUrl: "artist/3TrHIZ92sj1YvABKrcJTQE?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/ECMusician",
         igLink: "https://www.instagram.com/ethancantrellmusician/",
@@ -157,18 +152,15 @@ const monsterList ={
         ogPic: "andre-chisum-og",
         urlName: "andre-chisum",
         bioText: [
-            `combines 90s grunge and 70s country influences, writing heartfelt original songs while performing a wide range of covers. His inspirations, including Nirvana and Merle Haggard, echo in both his music and performances.`,
-            `Starting in his family band, The Rusty Tornadoes, Andre quickly made a name for himself. As a solo artist, he’s played venues like The Blue Rose, Grumpy’s Tavern, and The District Bar and Grill. With his band, Okra and the Universe, Andre has performed at Mayfest and The Venue Shrine, among others. He’s also part of Tulsa’s open mic circuit, frequenting spots like Broken Arrow Brewing Co. and Lot No. 6.`,
-            `Andre stands out with his loyal following, drawing crowds of friends and family who love his music and support his journey. Whether solo or in collaboration, his performances promise an engaging experience that resonates deeply with audiences.`,
-            `Currently, Andre balances three projects: his solo acoustic shows, an acoustic duo Mae ‘N Dre with Mae Bartel, and playing bass with Okra and the Universe. He’s actively writing, recording, and growing as an artist, aiming to leave a lasting mark on the local music scene and beyond.`
+            `is a Tulsa-based singer-songwriter whose warm vocals and acoustic-driven sound blend Americana, folk, and country. His original songs showcase heartfelt storytelling and soulful melodies, while his longer sets weave in timeless covers that span from the 1960s to today. Known for reading the room and tailoring each performance, Andre creates an atmosphere that feels both genuine and fun—making every show a mix of honest songwriting and singalong moments that bring people together.`,
         ],
-        spotifyUrl: "artist/2HLDLV7SRwYxCp228iwoeK?utm_source=generator",
+        spotifyUrl: "",
         fbLink: "https://www.facebook.com/andre.chisum",
         igLink: "https://www.instagram.com/andrechisummusic/",
         ttLink: "https://www.tiktok.com/@andrechisummusic?lang=en",
         ytLink: "",
         bcLink: "",
-        ytVid: "bXST0Xo_WWw?si=SauG5nip-5X0LXdx",
+        ytVid: "_wyRG2veYDM?si=zYt4p4QULhQzBLB5",
     },
     {
         name: "Rench In the Works",

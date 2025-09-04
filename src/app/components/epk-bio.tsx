@@ -1,6 +1,14 @@
 "use client"
 import Image from "next/image"
 import { useEffect, useState } from "react";
+import { Irish_Grover } from "next/font/google";
+
+
+const altFont = Irish_Grover({
+    subsets: ['latin'],
+    weight: ['400'], 
+})
+
 
 export default function EPKBio(
     props: {
@@ -30,8 +38,10 @@ export default function EPKBio(
         }
 
     return(
-        <div className="text-center text-xl border-b-2 border-yellow-400 leading-relaxed">
-            <div className="md:flex items-center lg:justify-between">
+        <div className="text-center justify-center text-xl border-b-2 border-yellow-400 leading-relaxed p-3">
+            <h1 className="text-4xl">{props.monster.name}</h1>
+            <p className={`${altFont.className} text-2xl justify-center m-auto max-w-screen-lg`}>{props.monster.bioText}</p>
+            {/* <div className="md:flex items-center lg:justify-between">
                 <div className="justify-center flex max-w-md">
                     <Image className="border-b-2 md:rounded-br-full md:border-4 md:border-l-0 md:border-t-0 border-yellow-400" src={`/epkpics/${bioPics[0]}.jpg`} alt="Ethan Cantrell" width={800} height={400} />
                 </div>
@@ -69,7 +79,7 @@ export default function EPKBio(
                 <div className="md:hidden p-4">
                     <h3>{props.monster.bioText[3]}</h3>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

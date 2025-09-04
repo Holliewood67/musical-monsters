@@ -5,6 +5,7 @@ import { Metadata, ResolvingMetadata } from "next"
 import SocialMedia from "@/app/components/social-media"
 import YoutubeEmbed from "@/app/components/youtube-embed"
 import EPKEvents from "@/app/components/epk-events"
+import EPKCarousel from "@/app/components/epk-carousel"
 
 type Props = {
     params: { monsterName: string }
@@ -47,7 +48,8 @@ export default function EPK({
 }) {
     const monster = monsterList.monsters.find(i => i.urlName === params.monsterName)
     return( 
-        <div>
+        <div className="text-center">
+            <EPKCarousel monster={monster}/>
             <EPKBio monster={monster} />
             <EPKEvents monster={monster} />
             {monster?.ytVid ? <YoutubeEmbed monster={monster} /> : <></> }
