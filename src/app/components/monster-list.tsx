@@ -18,14 +18,8 @@ const monsterList ={
         name: "Eric Ryan-Johnson",
         pics: ["erj-1", "erj-2", "erj-3", "erj-4", "erj-5"],
         ogPic: "erj-og",
-
         urlName: "eric-ryan-johnson",
-        bioText: [
-            `is a versatile musician based in Tulsa, Oklahoma, renowned for his skills as a vocalist, guitarist, and violinist. Originally from Madison, Wisconsin, he has cultivated a diverse musical career that spans several genres, including alt-acoustic rock and traditional Irish music.`,
-            `Eric is deeply involved in both solo projects and collaborative efforts. His solo work features a discography with multiple albums, such as "Just a Lil' Bit of Love" (2021) and "Two Hours out of Nashville" (2022), which highlight his ability to seamlessly transition from heartfelt acoustic ballads to more experimental sounds.`,
-            `In addition to his solo career, Eric is an accomplished fiddle player and instructor. He teaches both classical violin and traditional Irish fiddle and has been an active participant in Irish music groups like Cairde na Gael. His expertise has led him to teach at various workshops and festivals, where he shares his passion for Irish music with others.`,
-            `Whether performing solo or as part of a group, Eric Ryan-Johnson brings a rich blend of musical traditions to his work, making him a dynamic and influential figure in the Tulsa music scene.`
-        ],
+        bioText: 'is a Tulsa-based musician known for his versatility as a vocalist, guitarist, and violinist, blending alt-acoustic rock with traditional Irish music. Originally from Madison, Wisconsin, he has released multiple solo albums that move between heartfelt acoustic ballads and experimental sounds. Whether performing solo or with a group, he brings a rich blend of musical traditions to the stage, making him a dynamic presence in the Tulsa music scene.',
         spotifyUrl: "artist/2yh8yQClY7aQ4evzoAHzZ7?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/ericryanjohnsonband",
         igLink: "https://www.instagram.com/e.ryanjohnson/",
@@ -39,12 +33,7 @@ const monsterList ={
         pics: ["jeff-bush-1","jeff-bush-2", "jeff-bush-3", "jeff-bush-4", "jeff-bush-5"],
         urlName: "jeff-bush",
         ogPic: "jeff-bush-og",
-        bioText: [
-            `is a folk punk ukulele player whose sound is as raw and emotional as it is versatile. Influenced by artists like Amigo the Devil and Weird Al, as well as classic rock, old country, and folk punk, he brings a unique blend of intensity and heartfelt storytelling to his music.`,
-            `After casually playing guitar in high school and college, Jeff stepped away from music for years. In 2023, he rediscovered his passion, this time through the ukulele, which reignited his love for creating music. Since then, he has been honing his craft, performing at various venues around Tulsa including Lot No. 6 and Soundpony, as well as busking in downtown Tulsa where he  captivates passersbys with his dynamic vocal range that shifts from clean tones to raspy growls and powerful screams.`,
-            `Jeff's music is deeply personal, reflecting his own experiences and emotions, and he pours this raw energy into every performance. His songs resonate with authenticity, drawing listeners into the stories he tells through his lyrics and melodies.`,
-            `Currently, Jeff is dedicated to improving his skills and working towards releasing his first album by the end of the year. His journey in music is just beginning, but his passion and commitment already make him a compelling force in the folk punk scene, leaving a lasting impact on everyone who hears him play.`
-        ],
+        bioText: 'is a folk punk ukulele player whose music blends raw emotion with versatility, influenced by artists like Amigo the Devil, Weird Al, and classic rock and country. After rediscovering his passion for music in 2023, he has been performing across Tulsa at venues like Lot No. 6 and Soundpony, as well as busking downtown, captivating listeners with a vocal range that shifts from clean tones to raspy growls and powerful screams. His deeply personal songs reflect lived experiences and authenticity, and he is currently working toward releasing his first album, bringing his intensity and heartfelt storytelling to an even wider audience.',
         spotifyUrl: "artist/7jV8Cj5bqsja5xOXainG8i?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/profile.php?id=695022605",
         igLink: "",
@@ -58,12 +47,7 @@ const monsterList ={
         pics: ["chris-ray-1","chris-ray-2", "chris-ray-3", "chris-ray-4", "chris-ray-5"],
         ogPic: "chris-ray-og",
         urlName: "chris-ray",
-        bioText: [
-            `blends 90s grunge with a modern edge, influenced by Alice in Chains, Soundgarden, and Ray LaMontagne. His sound pulls from an eclectic mix of genres, including blues, punk, and pop, reflecting a lifetime of musical exploration.`,
-            `Chris started performing at a young age, inspired by family jam sessions and campfire singalongs. His career began at coffee shops and riverside gigs, leading to performances at venues like The Bowery and Harvard Sports Bar, where his music left lasting impressions.`,
-            `Known for reading the room and creating memorable experiences, Chris has performed at events like Inola Hay Days and American Airlines employee parties. He is proud of his ability to engage audiences across genres, whether through original songs or personalized setlists.`,
-            `Chris's goal is to complete and release a collection of 10 songs, blending new ideas with past inspirations. With five tracks nearly finished, he is determined to keep writing, refining, and sharing his music with the world.`
-        ],
+        bioText: 'blends 90s grunge with a modern edge, drawing influence from Alice in Chains, Soundgarden, and Ray LaMontagne while weaving in blues, punk, and pop. Starting with family jam sessions and riverside gigs, he went on to perform at venues like The Bowery and Harvard Sports Bar, where his music left lasting impressions. Known for reading the room and engaging any crowd, he has played events from Inola Hay Days to American Airlines parties. Currently, he is focused on completing and releasing a collection of 10 songs, building on both new ideas and past inspirations.',
         spotifyUrl: "",
         fbLink: "https://www.facebook.com/profile.php?id=100093616841458",
         igLink: "https://www.instagram.com/christopherray862/",
@@ -76,12 +60,7 @@ const monsterList ={
         pics: ["josh-thorne-1","josh-thorne-2", "josh-thorne-3", "josh-thorne-4", "josh-thorne-5"],
         ogPic: "josh-thorne-og",
         urlName: "josh-thorne",
-        bioText: [
-            `delivers a unique blend of psychedelic pop, drawing influence from the Beatles, Grandaddy, Radiohead, and Animal Collective. With folk roots and a knack for Phish-style jamming, he creates warm, captivating recordings that reflect both depth and playfulness.`,
-            `Known for his good stage presence and engaging with patrons, Josh offers performances that leave a lasting impression. His songwriting and playing stand out, bringing originality to every venue, from cafes to bars.`,
-            `Josh's music merges Wilco-inspired writing with the dynamic sounds of Chicago and Boston, creating an eclectic mix that resonates with diverse audiences.`,
-            `Currently, he aims to continue writing and recording while pursuing opportunities to open for bands and perform at intimate venues, spreading his evolving sound far and wide.`
-        ],
+        bioText: 'delivers a unique blend of psychedelic pop influenced by the Beatles, Radiohead, Grandaddy, and Animal Collective, with folk roots and a flair for Phish-style jamming. Known for his strong stage presence and engaging performances, he brings originality to every show, whether in cafes or bars. His music combines Wilco-inspired songwriting with the dynamic sounds of Chicago and Boston, creating an eclectic style that connects with diverse audiences. Currently, he is focused on writing, recording, and pursuing opportunities to open for bands while sharing his evolving sound with new listeners.',
         spotifyUrl: "",
         fbLink: "https://www.facebook.com/people/Josh-Thorne/pfbid0qd34YN82gmsfbZT6fipfUhicAZ2jtg1RYQtypPqbwXxLZCFtoS3obsAnbHZzYGnvl/",
         igLink: "",
@@ -94,12 +73,7 @@ const monsterList ={
         pics: ["vic-ortega-1", "vic-ortega-2", "vic-ortega-3", "vic-ortega-4", "vic-ortega-5"],
         ogPic: "vic-ortega-og",
         urlName: "vic-ortega",
-        bioText: [
-            `delivers a mix of alternative, grunge, and folk sounds, drawing inspiration from artists like Mazzy Star, Adele, Chris Cornell, and Eddie Vedder. Their music reflects a blend of introspective melodies and raw emotion, offering a unique take on familiar genres.`,
-            `Vic has performed at a variety of venues, including Tap on the Tracks, Sidecar, Gypsy Coffee House, McKinney’s, Toast, and Tulsa Zoo. Their performances create a joyous and uplifting atmosphere, often captivating audiences and encouraging heartfelt applause.`,
-            `Growing up with a deep connection to music, Vic's parents nurtured their passion by enrolling them in music programs. Moving to Tulsa was a pivotal moment, introducing them to a diverse music community where they felt right at home.`,
-            `Vic’s current goal is to make music a full-time pursuit, using their art to inspire others. With multiple singles and albums ready to be recorded, they aim to turn their latest songwriting efforts into reality, reinvesting their earnings back into their craft.`
-        ],
+        bioText: 'blends alternative, grunge, and folk influences, inspired by artists like Mazzy Star, Adele, Chris Cornell, and Eddie Vedder. They’ve performed at venues such as Tap on the Tracks, Sidecar, Gypsy Coffee House, McKinney’s, Toast, and the Tulsa Zoo, creating joyous and uplifting atmospheres that captivate audiences. Growing up immersed in music, their passion was nurtured through early programs and later flourished in Tulsa’s diverse music scene. With multiple singles and albums ready to record, Vic’s goal is to make music a full-time pursuit and use their art to inspire others.',
         spotifyUrl: "artist/2gmYgjnkhGHkx651qI4GiD?utm_source=generator",
         fbLink: "https://www.facebook.com/vicortegamusic",
         igLink: "https://www.instagram.com/vicortegamusic/",
@@ -113,12 +87,7 @@ const monsterList ={
         pics: ["fraytus-1", "fraytus-2", "fraytus-3", "fraytus-4", "fraytus-5"],
         ogPic: "fraytus-og",
         urlName: "fraytus",
-        bioText: [
-            `blends grunge, rap-rock, and hip-hop into a high-energy, hard-hitting sound influenced by Korn, Nirvana, Rage Against the Machine, and Wu-Tang Clan. As a live loop artist, he builds his music layer by layer in real time, delivering an electrifying and unpredictable performance every time he steps on stage.`,
-            `With experience performing across eight states, FrayTus has played at festivals and venues like the OKC State Fair, Creek County Fair, and Rawk the River Festival. His ability to command a stage and create massive soundscapes on the fly sets him apart from other artists in the scene.`,
-            `His journey began at 14 when he saw a kid playing guitar and knew he had to do the same. Years later, after discovering Tash Sultana’s looping techniques, he transformed his sound, incorporating raw, unfiltered energy into every performance.`,
-            `Always evolving, FrayTus continues to write, record, and push the boundaries of his music. With new releases on the horizon, he’s constantly innovating, proving that his artistry is just getting started.`
-        ],
+        bioText: 'fuses grunge, rap-rock, and hip-hop into a high-energy sound inspired by Korn, Nirvana, Rage Against the Machine, and Wu-Tang Clan. As a live loop artist, he builds songs layer by layer in real time, delivering electrifying performances that are never the same twice. Having performed across eight states at festivals like the OKC State Fair, Creek County Fair, and Rawk the River Festival, he’s known for commanding the stage and creating massive soundscapes on the fly. Always evolving, FrayTus continues to write, record, and push boundaries, with new releases on the horizon.',
         spotifyUrl: "artist/6u6fD16y2MxAO3HZf3B1mZ?utm_source=generator&theme=0",
         fbLink: "https://www.facebook.com/FrayTus/",
         igLink: "https://www.instagram.com/fraytus/?hl=en",
@@ -132,12 +101,7 @@ const monsterList ={
         pics: ["davaughnte-hill-1", "davaughnte-hill-2", "davaughnte-hill-3", "davaughnte-hill-4"],
         ogPic: "davaughnte-hill-og",
         urlName: "davaughnte-hill",
-        bioText: [
-            `brings a universal style to his music, shaped by the soulfulness of rhythm and blues and a foundation built in church choirs. His sound blends heartfelt melodies with an energetic presence that captivates any audience.`,
-            `His performances range from bars and alleyway parties to college campuses. A standout moment in his career was playing at Dickinson State University, where he entertained an entire town and felt the thrill of performing on a college stage.`,
-            `Starting with church and school choirs, Davaughnte discovered his passion for music in unexpected ways. Those early experiences prepared him for this journey, leading to moments when listeners first celebrated his natural talent.`,
-            `With ambitions to be one of the greatest singer-songwriters, Davaughnte is constantly collaborating with Oklahoma artists. He’s gearing up to release a new single, finalize an EP, and work toward his ultimate goal: performing at Tulsa’s iconic BOK Center.`
-        ],
+        bioText: 'blends the soulfulness of R&B with roots in church choirs, creating heartfelt melodies and an energetic stage presence that captivates audiences. From bars and alleyway parties to college campuses like Dickinson State University, he’s brought his music to diverse crowds with passion and authenticity. Starting in choirs, his natural talent quickly stood out, fueling his dream of becoming one of the great singer-songwriters. Now collaborating with Oklahoma artists, Davaughnte is preparing to release a new single, finalize an EP, and pursue his ultimate goal of performing at Tulsa’s BOK Center.',
         spotifyUrl: "artist/11ZrJczc8P1RNLllDln7S9?utm_source=generator",
         fbLink: "https://www.facebook.com/profile.php?id=100084237335680",
         igLink: "https://www.instagram.com/dhill_music ",
@@ -151,9 +115,7 @@ const monsterList ={
         pics: ["andre-chisum-1","andre-chisum-2","andre-chisum-3","andre-chisum-4","andre-chisum-5","andre-chisum-6","andre-chisum-7","andre-chisum-8","andre-chisum-9",],
         ogPic: "andre-chisum-og",
         urlName: "andre-chisum",
-        bioText: [
-            `is a Tulsa-based singer-songwriter whose warm vocals and acoustic-driven sound blend Americana, folk, and country. His original songs showcase heartfelt storytelling and soulful melodies, while his longer sets weave in timeless covers that span from the 1960s to today. Known for reading the room and tailoring each performance, Andre creates an atmosphere that feels both genuine and fun—making every show a mix of honest songwriting and singalong moments that bring people together.`,
-        ],
+        bioText: `is a Tulsa-based singer-songwriter whose warm vocals and acoustic-driven sound blend Americana, folk, and country. His original songs showcase heartfelt storytelling and soulful melodies, while his longer sets weave in timeless covers that span from the 1960s to today. Known for reading the room and tailoring each performance, Andre creates an atmosphere that feels both genuine and fun—making every show a mix of honest songwriting and singalong moments that bring people together.`,
         spotifyUrl: "",
         fbLink: "https://www.facebook.com/andre.chisum",
         igLink: "https://www.instagram.com/andrechisummusic/",
@@ -167,12 +129,7 @@ const monsterList ={
         pics: ["rench-1", "rench-2", "rench-3", "rench-4", "rench-5"],
         ogPic: "rench-og",
         urlName: "rench-in-the-works",
-        bioText: [
-            `grew up with an eclectic musical upbringing, influenced by their parents’ road trips filled with everything from The Beatles and The Beach Boys to Frank Sinatra and Barry Manilow. In their adolescence, they discovered Def Leppard, Metallica, and punk, which shaped their musical philosophy: do what you want, and anything goes.`,
-            `Their sound blends early influences like Sinatra and The Beach Boys with punk icons like The Misfits and NOFX, as well as reggae and hip-hop from artists like Bob Marley and A Tribe Called Quest. Rench’s music reflects a wide range of genres, defying strict categorization.`,
-            `Throughout their journey, they have embraced the freedom of musical exploration, often mixing unexpected styles. Whether it's folk-inspired storytelling or punk energy, Rench ensures their sound remains distinct and dynamic.`,
-            `With roots in both performance and production, Rench continues to evolve, creating music that resonates across genres and generations. Their passion for music lies in crafting something meaningful, no matter the style or setting.`
-        ],
+        bioText: 'delivers a genre-defying sound shaped by an eclectic upbringing that spanned The Beatles and Sinatra to Metallica and punk icons like The Misfits. Blending elements of punk, folk, reggae, and hip-hop, their music embraces the philosophy that anything goes, creating a style that’s both distinct and dynamic. With roots in both performance and production, Rench continues to evolve, crafting meaningful songs that resonate across genres and generations.',
         spotifyUrl: "",
         fbLink: "https://www.facebook.com/search/top?q=rench%20in%20the%20works",
         igLink: "https://www.instagram.com/rench.in.the.wrx/",
@@ -185,12 +142,7 @@ const monsterList ={
         pics: ["joey-carter-1", "joey-carter-2", "joey-carter-3", "joey-carter-4", "joey-carter-5", "joey-carter-6", "joey-carter-7", "joey-carter-8"],
         ogPic: "joey-carter-og",
         urlName: "joey-carter",
-        bioText: [
-            ` is a raw, unfiltered singer-songwriter blending folk, punk, blues, and dark country. Influenced by legends like Townes Van Zandt and Johnny Cash, his music is crafted to make listeners think and feel. Whether acoustic or full-band, his songs capture life’s struggles, triumphs, and hard truths.`,
-            `From playing lead guitar in a hardcore band at The Vanguard to performing at Tulsa’s open mic and songwriter nights, Joey has brought music to a variety of stages. However, one of the most powerful performances wasn’t at a traditional venue—it was at a rehabilitation facility in Florida. Playing for a room of strangers who were fighting their own battles, Joey saw firsthand how music could bring people together, offering comfort, laughter, and connection in a way that transcends location or circumstance.`,
-            `Every performance is played like it could be the last, carrying an intensity and authenticity that sets Joey apart. His songs are brutally honest, reflecting life’s struggles in a way that resonates deeply with audiences. With a focus on original music that challenges perspectives and evokes strong emotions, Joey’s presence on stage is both intimate and powerful, leaving listeners with something to carry long after the last note fades.`,
-            `Music has been part of Joey’s life since childhood, starting with the cowboy chords his grandfather taught him. From being dragged into nursing homes to play for lonely residents to finding his own voice through songwriting, music has always been more than just a passion—it’s a purpose. Now, Joey is working on his debut full-length album and continuing to play anywhere and everywhere, with the simple goal of making people feel something.`
-        ],
+        bioText: 'is a raw, unfiltered singer-songwriter blending folk, punk, blues, and dark country, influenced by legends like Townes Van Zandt and Johnny Cash. From playing lead guitar in a hardcore band to Tulsa’s open mic nights, Joey has performed on a variety of stages, including a transformative set at a Florida rehabilitation facility. His brutally honest songs carry intensity and authenticity, resonating deeply with audiences. With music in his life since childhood, Joey is working on his debut full-length album while continuing to perform everywhere, aiming to make listeners feel something profound.',
         spotifyUrl: "album/69ur6nprcAs5SQmBFGl8Y2?utm_source=generator",
         fbLink: "https://www.facebook.com/profile.php?id=61567185576958",
         igLink: "https://www.instagram.com/joeycarterandthenoshows/",
@@ -204,12 +156,7 @@ const monsterList ={
         pics: ["ian-griffith-1", "ian-griffith-2", "ian-griffith-3", "ian-griffith-4", "ian-griffith-5"],
         ogPic: "ian-griffith-og",
         urlName: "ian-griffith",
-        bioText: [
-            `Ian Griffith is an acoustic singer-songwriter with a raw, emotional sound shaped by grunge and 90s alt-rock. Influenced by artists like Weezer, Foo Fighters, Corey Taylor, and Jars of Clay, he blends heavy inspiration with stripped-down arrangements to create something deeply personal and powerful.`,
-            `He’s performed across the Tulsa area, including a standout set opening for comedian Andy Dick at Geaux Theaters in Broken Arrow. Whether at open mics or booked gigs, Ian brings a commanding voice and emotional depth that captivates audiences and leaves a lasting impression.`,
-            `Inspired by his father’s love of songwriting, Ian began writing music at 18 and quickly realized he couldn’t let his own songs go unheard. He believes deeply in the power of lyrics and emotional honesty, using his music to connect with others on a real and vulnerable level.`,
-            `Ian is currently preparing to release his second single, Heaven Knows, on July 10th, 2025, while growing his audience through TikTok and YouTube. With plans to release a full album by the end of the year, he’s focused on turning open mic nights into a sustainable music career—and eventually reaching listeners around the world.`
-        ],
+        bioText: 'is an acoustic singer-songwriter whose raw, emotional sound blends grunge and 90s alt-rock, influenced by Weezer, Foo Fighters, Corey Taylor, and Jars of Clay. He has performed across Tulsa, including a notable opening for comedian Andy Dick at Geaux Theaters, captivating audiences with his commanding voice and emotional depth. Inspired by his father, Ian began writing at 18, channeling honesty and vulnerability into his lyrics to connect with listeners. He is focused on building his audience, releasing a full album, and transitioning from open mic nights into a sustainable music career while reaching listeners worldwide.',
         spotifyUrl: "artist/3g5QFDyschekv0LARETVEQ?utm_source=generator",
         fbLink: "https://www.facebook.com/iangriff10",
         igLink: "",
@@ -222,12 +169,7 @@ const monsterList ={
         pics: ["elzie-b-hickerson-1", "elzie-b-hickerson-2", "elzie-b-hickerson-3", "elzie-b-hickerson-4", "elzie-b-hickerson-5"],
         ogPic: "elzie-b-hickerson-og",
         urlName: "elzie-b-hickerson",
-        bioText: [
-            `is a singer-songwriter from Oklahoma whose music reflects a life full of stories, emotion, and exploration. His songwriting spans genres, drawing from folk, Americana, rock, and anything else that speaks to the heart.`,
-            `Growing up on artists like James Taylor, The Beatles, Neil Young, and Van Morrison, he learned early that great songs don’t have to fit into a single box. That spirit of musical freedom continues to guide his sound today.`,
-            `Each song he writes captures a moment, a feeling, or a person who shaped his journey. His music feels both personal and familiar—like something pulled from your own memories.`,
-            `Whether performing live or sharing recordings, Elzie invites listeners into a shared space of reflection and connection. His goal is simple: to write songs that resonate with your story as much as they do with his.`
-        ],
+        bioText: 'Elzie B. Hickerson is an Oklahoma singer-songwriter whose music spans folk, Americana, and rock, capturing stories, emotions, and life’s journeys. Influenced by artists like James Taylor, The Beatles, Neil Young, and Van Morrison, he embraces a spirit of musical freedom that guides his sound. Each song reflects a moment, feeling, or person who shaped his path, creating music that feels both personal and familiar. Whether performing live or sharing recordings, Elzie aims to craft songs that resonate with listeners’ experiences as much as his own.',
         spotifyUrl: "artist/6boCzAhpSYT7a4OkXcIykq?utm_source=generator",
         fbLink: "https://www.facebook.com/elzie.b.hickerson",
         igLink: "https://www.instagram.com/elziebhickerson",

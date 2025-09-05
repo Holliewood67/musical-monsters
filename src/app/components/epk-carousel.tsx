@@ -57,7 +57,7 @@ export default function EPKCarousel({ monster }: { monster: any }) {
       "(min-width: 1024px)": {
         slides: { 
             perView: 3, 
-            spacing: 10,
+            spacing: 20,
             origin: "center",
         }, 
       },
