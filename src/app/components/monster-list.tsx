@@ -112,7 +112,7 @@ const monsterList ={
     },
     {
         name: "Andre Chisum",
-        pics: ["andre-chisum-1","andre-chisum-2","andre-chisum-3","andre-chisum-4","andre-chisum-5","andre-chisum-6","andre-chisum-7","andre-chisum-8","andre-chisum-9",],
+        pics: ["andre-chisum-1","andre-chisum-2","andre-chisum-3","andre-chisum-4","andre-chisum-5","andre-chisum-6","andre-chisum-7",],
         ogPic: "andre-chisum-og",
         urlName: "andre-chisum",
         bioText: `is a Tulsa-based singer-songwriter whose warm vocals and acoustic-driven sound blend Americana, folk, and country. His original songs showcase heartfelt storytelling and soulful melodies, while his longer sets weave in timeless covers that span from the 1960s to today. Known for reading the room and tailoring each performance, Andre creates an atmosphere that feels both genuine and fun—making every show a mix of honest songwriting and singalong moments that bring people together.`,
