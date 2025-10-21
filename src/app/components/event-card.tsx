@@ -40,9 +40,10 @@ export default function EventCard ( { event }: { event: Event} ){
         );
         return index !== -1
           ? googleDriveFix(event.attachments[index].fileUrl)
-          : null;
+          : googleDriveFix(event.attachments[0].fileUrl)
       })()
     : "/mm2.png";
+    // : "/mm2.png";
 
     const imgAlt = 
     event.attachments && event.attachments.length > 0

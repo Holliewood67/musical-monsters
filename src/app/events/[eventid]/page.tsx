@@ -2,11 +2,11 @@ import Image from "next/image";
 import { Metadata, ResolvingMetadata } from "next";
 import { Irish_Grover } from "next/font/google"
 import { sanitizeDescription, sanitizeOGDescription } from "@/app/lib/sanitize-html";
+
 const altFont = Irish_Grover({
     subsets: ['latin'],
     weight: ['400'], 
 })
-
 
 const googleDriveFix = (url: string) => {
   const match = url.match(/id=([^&]+)/);
@@ -56,11 +56,11 @@ export async function generateMetadata(
         );
         return index !== -1
           ? googleDriveFix(event.attachments[index].fileUrl)
-          : null;
+          : googleDriveFix(event.attachments[0].fileUrl)
       })()
     : "/mm2.png";
 
-    const descriptionFix = event.description
+  const descriptionFix = event.description
     ? sanitizeOGDescription(event.description)
     : null;
 
@@ -85,7 +85,6 @@ export async function generateMetadata(
   };
 }
 
-// ✅ This is how we fetch in App Router
 export default async function EventPage({ params }: Props) {
   const calendarID = process.env.NEXT_PUBLIC_CALENDAR_ID;
   const apiKey = process.env.NEXT_PUBLIC_CALENDAR_API_KEY;
@@ -94,7 +93,11 @@ export default async function EventPage({ params }: Props) {
   const res = await fetch(url, { cache: "no-store" });
 
   if (!res.ok) {
-    return <h1 className="text-red-500 text-2xl">Event not found</h1>;
+    return (
+      <div className="flex items-center justify-center min-h-screen px-4">
+        <h1 className="text-red-400 text-2xl font-bold">Event not found</h1>
+      </div>
+    );
   }
 
   const event: Event = await res.json();
@@ -113,45 +116,62 @@ export default async function EventPage({ params }: Props) {
           );
           return index !== -1
             ? googleDriveFix(event.attachments[index].fileUrl)
-            : "/mm2.png";
+            : googleDriveFix(event.attachments[0].fileUrl)
         })()
       : "/mm2.png";
 
   const imgAlt =
-  event.attachments && event.attachments.length > 0
-    ? event.attachments![0].title
-    : "Musical Monsters";
+    event.attachments && event.attachments.length > 0
+      ? event.attachments[0].title
+      : "Musical Monsters";
 
   const descriptionFix = event.description
     ? sanitizeDescription(event.description)
     : null;
   
   return (
-    <section className="flex flex-col items-center justify-center text-center max-w-3xl mx-auto text-gray-100">
-      <div className="px-4 py-6">
-        <h1 className="text-3xl font-bold mb-2">{event.summary}</h1>
-        <p className="text-yellow-400 mb-2">{startDate}</p>
-        {event.location && <p className="mb-4">{event.location}</p>}
-        {imageUrlFull && (
-          <Image
-            src={imageUrlFull}
-            alt={imgAlt || "Event flyer"}
-            width={400}
-            height={200}
-            className="rounded justify-center items-center mx-auto"
-          />
+    <section className="flex flex-col items-center justify-center text-center max-w-6xl mx-auto text-gray-100 px-4 py-8 md:py-12">
+      {/* Event Header */}
+      <div className="text-center mb-8 w-full">
+        <h1 className="text-3xl md:text-4xl font-bold mb-3 leading-tight">
+          {event.summary}
+        </h1>
+        <p className="text-yellow-400 text-lg md:text-xl font-semibold mb-2">
+          {startDate}
+        </p>
+        {event.location && (
+          <p className="text-gray-300 text-base md:text-lg">
+            📍 {event.location}
+          </p>
         )}
       </div>
-      <div>
-          {descriptionFix && (
-          <div className="event-link">
-          <div
-            className={`${altFont.className} text-xl border-t-2 border-yellow-400 px-4 py-6 whitespace-pre-line`}
-            dangerouslySetInnerHTML={{ __html: descriptionFix }}
-          />
+
+      {/* Image and Description Container */}
+      <div className="flex flex-col lg:flex-row gap-8 w-full items-start">
+        {/* Event Image */}
+        {imageUrlFull && (
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <Image
+              src={imageUrlFull}
+              alt={imgAlt || "Event flyer"}
+              width={800}
+              height={800}
+              className="rounded-lg shadow-2xl w-full max-w-md h-auto"
+              priority
+            />
           </div>
-          )}
-        </div>
+        )}
+
+        {/* Event Description */}
+        {descriptionFix && (
+          <div className="w-full lg:w-1/2">
+            <div
+              className={`${altFont.className} text-lg md:text-xl leading-relaxed whitespace-pre-line`}
+              dangerouslySetInnerHTML={{ __html: descriptionFix }}
+            />
+          </div>
+        )}
+      </div>
     </section>
   );
 }
