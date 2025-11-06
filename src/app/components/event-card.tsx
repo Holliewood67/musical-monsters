@@ -43,7 +43,6 @@ export default function EventCard ( { event }: { event: Event} ){
           : googleDriveFix(event.attachments[0].fileUrl)
       })()
     : "/mm2.png";
-    // : "/mm2.png";
 
     const imgAlt = 
     event.attachments && event.attachments.length > 0

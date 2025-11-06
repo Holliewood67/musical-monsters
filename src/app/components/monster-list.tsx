@@ -2,7 +2,7 @@ const monsterList ={
     monsters: [
     {
         name: "Ethan Cantrell",
-        pics: ["ethan-cantrell-1", "ethan-cantrell-2","ethan-cantrell-3", "ethan-cantrell-4", "ethan-cantrell-5"],
+        picsNumber: 5,
         ogPic: "ethan-cantrell-og",
         urlName: "ethan-cantrell",
         bioText: 'delivers an acoustic blend of folk and punk infused with ska and reggae, shaped by influences like Green Day, Woody Guthrie, Streetlight Manifesto, and Pat the Bunny. With over 15 years of experience performing, running sound, and producing music, he has built a style that is both unique and dynamic. For the past three years, he has also hosted “Musical Monsters,” fostering a community of local musicians while connecting deeply with audiences through his refined yet high-energy performances.',
@@ -12,12 +12,12 @@ const monsterList ={
         ttLink: "https://www.tiktok.com/@ethancantrellmusician",
         ytLink: "https://www.youtube.com/channel/UC9fOxoEeGQmTzzXFTQEjqRA",
         bcLink: "",
-        ytVid: "XAvogeCobzs?si=QWjV65CUHvI5XYjK",
+        ytVid: "bPeYVK2qRto?si=eUG4lQrhO-UKHBq9",
     },
     {
         name: "Eric Ryan-Johnson",
-        pics: ["erj-1", "erj-2", "erj-3", "erj-4", "erj-5"],
-        ogPic: "erj-og",
+        picsNumber: 5,
+        ogPic: "eric-ryan-johnson-og",
         urlName: "eric-ryan-johnson",
         bioText: 'is a Tulsa-based musician known for his versatility as a vocalist, guitarist, and violinist, blending alt-acoustic rock with traditional Irish music. Originally from Madison, Wisconsin, he has released multiple solo albums that move between heartfelt acoustic ballads and experimental sounds. Whether performing solo or with a group, he brings a rich blend of musical traditions to the stage, making him a dynamic presence in the Tulsa music scene.',
         spotifyUrl: "artist/2yh8yQClY7aQ4evzoAHzZ7?utm_source=generator&theme=0",
@@ -30,7 +30,7 @@ const monsterList ={
     },
     {
         name: "Jeff Bush",
-        pics: ["jeff-bush-1","jeff-bush-2", "jeff-bush-3", "jeff-bush-4", "jeff-bush-5"],
+        picsNumber: 5,
         urlName: "jeff-bush",
         ogPic: "jeff-bush-og",
         bioText: 'is a folk punk ukulele player whose music blends raw emotion with versatility, influenced by artists like Amigo the Devil, Weird Al, and classic rock and country. After rediscovering his passion for music in 2023, he has been performing across Tulsa at venues like Lot No. 6 and Soundpony, as well as busking downtown, captivating listeners with a vocal range that shifts from clean tones to raspy growls and powerful screams. His deeply personal songs reflect lived experiences and authenticity, and he is currently working toward releasing his first album, bringing his intensity and heartfelt storytelling to an even wider audience.',
@@ -44,7 +44,7 @@ const monsterList ={
     },
     {
         name: "Chris Ray",
-        pics: ["chris-ray-1","chris-ray-2", "chris-ray-3", "chris-ray-4", "chris-ray-5"],
+        picsNumber: 5,
         ogPic: "chris-ray-og",
         urlName: "chris-ray",
         bioText: 'blends 90s grunge with a modern edge, drawing influence from Alice in Chains, Soundgarden, and Ray LaMontagne while weaving in blues, punk, and pop. Starting with family jam sessions and riverside gigs, he went on to perform at venues like The Bowery and Harvard Sports Bar, where his music left lasting impressions. Known for reading the room and engaging any crowd, he has played events from Inola Hay Days to American Airlines parties. Currently, he is focused on completing and releasing a collection of 10 songs, building on both new ideas and past inspirations.',
@@ -57,7 +57,7 @@ const monsterList ={
     },
     {
         name: "Josh Thorne",
-        pics: ["josh-thorne-1","josh-thorne-2", "josh-thorne-3", "josh-thorne-4", "josh-thorne-5"],
+        picsNumber: 5,
         ogPic: "josh-thorne-og",
         urlName: "josh-thorne",
         bioText: 'delivers a unique blend of psychedelic pop influenced by the Beatles, Radiohead, Grandaddy, and Animal Collective, with folk roots and a flair for Phish-style jamming. Known for his strong stage presence and engaging performances, he brings originality to every show, whether in cafes or bars. His music combines Wilco-inspired songwriting with the dynamic sounds of Chicago and Boston, creating an eclectic style that connects with diverse audiences. Currently, he is focused on writing, recording, and pursuing opportunities to open for bands while sharing his evolving sound with new listeners.',
@@ -70,7 +70,7 @@ const monsterList ={
     },
     {
         name: "Vic Ortega",
-        pics: ["vic-ortega-1", "vic-ortega-2", "vic-ortega-3", "vic-ortega-4", "vic-ortega-5"],
+        picsNumber: 5,
         ogPic: "vic-ortega-og",
         urlName: "vic-ortega",
         bioText: 'blends alternative, grunge, and folk influences, inspired by artists like Mazzy Star, Adele, Chris Cornell, and Eddie Vedder. They’ve performed at venues such as Tap on the Tracks, Sidecar, Gypsy Coffee House, McKinney’s, Toast, and the Tulsa Zoo, creating joyous and uplifting atmospheres that captivate audiences. Growing up immersed in music, their passion was nurtured through early programs and later flourished in Tulsa’s diverse music scene. With multiple singles and albums ready to record, Vic’s goal is to make music a full-time pursuit and use their art to inspire others.',
@@ -84,7 +84,7 @@ const monsterList ={
     },
     {
         name: "FrayTus",
-        pics: ["fraytus-1", "fraytus-2", "fraytus-3", "fraytus-4", "fraytus-5"],
+        picsNumber: 5,
         ogPic: "fraytus-og",
         urlName: "fraytus",
         bioText: 'fuses grunge, rap-rock, and hip-hop into a high-energy sound inspired by Korn, Nirvana, Rage Against the Machine, and Wu-Tang Clan. As a live loop artist, he builds songs layer by layer in real time, delivering electrifying performances that are never the same twice. Having performed across eight states at festivals like the OKC State Fair, Creek County Fair, and Rawk the River Festival, he’s known for commanding the stage and creating massive soundscapes on the fly. Always evolving, FrayTus continues to write, record, and push boundaries, with new releases on the horizon.',
@@ -98,7 +98,7 @@ const monsterList ={
     },
     {
         name: "Davaughnte Hill",
-        pics: ["davaughnte-hill-1", "davaughnte-hill-2", "davaughnte-hill-3", "davaughnte-hill-4"],
+        picsNumber: 4,
         ogPic: "davaughnte-hill-og",
         urlName: "davaughnte-hill",
         bioText: 'blends the soulfulness of R&B with roots in church choirs, creating heartfelt melodies and an energetic stage presence that captivates audiences. From bars and alleyway parties to college campuses like Dickinson State University, he’s brought his music to diverse crowds with passion and authenticity. Starting in choirs, his natural talent quickly stood out, fueling his dream of becoming one of the great singer-songwriters. Now collaborating with Oklahoma artists, Davaughnte is preparing to release a new single, finalize an EP, and pursue his ultimate goal of performing at Tulsa’s BOK Center.',
@@ -112,7 +112,7 @@ const monsterList ={
     },
     {
         name: "Andre Chisum",
-        pics: ["andre-chisum-1","andre-chisum-2","andre-chisum-3","andre-chisum-4","andre-chisum-5","andre-chisum-6","andre-chisum-7",],
+        picsNumber: 7,
         ogPic: "andre-chisum-og",
         urlName: "andre-chisum",
         bioText: `is a Tulsa-based singer-songwriter whose warm vocals and acoustic-driven sound blend Americana, folk, and country. His original songs showcase heartfelt storytelling and soulful melodies, while his longer sets weave in timeless covers that span from the 1960s to today. Known for reading the room and tailoring each performance, Andre creates an atmosphere that feels both genuine and fun—making every show a mix of honest songwriting and singalong moments that bring people together.`,
@@ -126,8 +126,8 @@ const monsterList ={
     },
     {
         name: "Rench In the Works",
-        pics: ["rench-1", "rench-2", "rench-3", "rench-4", "rench-5"],
-        ogPic: "rench-og",
+        picsNumber: 5,
+        ogPic: "rench-in-the-works-og",
         urlName: "rench-in-the-works",
         bioText: 'delivers a genre-defying sound shaped by an eclectic upbringing that spanned The Beatles and Sinatra to Metallica and punk icons like The Misfits. Blending elements of punk, folk, reggae, and hip-hop, their music embraces the philosophy that anything goes, creating a style that’s both distinct and dynamic. With roots in both performance and production, Rench continues to evolve, crafting meaningful songs that resonate across genres and generations.',
         spotifyUrl: "",
@@ -139,7 +139,7 @@ const monsterList ={
     },
     {
         name: "Joey Carter",
-        pics: ["joey-carter-1", "joey-carter-2", "joey-carter-3", "joey-carter-4", "joey-carter-5", "joey-carter-6", "joey-carter-7", "joey-carter-8"],
+        picsNumber: 8,
         ogPic: "joey-carter-og",
         urlName: "joey-carter",
         bioText: 'is a raw, unfiltered singer-songwriter blending folk, punk, blues, and dark country, influenced by legends like Townes Van Zandt and Johnny Cash. From playing lead guitar in a hardcore band to Tulsa’s open mic nights, Joey has performed on a variety of stages, including a transformative set at a Florida rehabilitation facility. His brutally honest songs carry intensity and authenticity, resonating deeply with audiences. With music in his life since childhood, Joey is working on his debut full-length album while continuing to perform everywhere, aiming to make listeners feel something profound.',
@@ -153,7 +153,7 @@ const monsterList ={
     },
     {
         name: "Ian Griffith",
-        pics: ["ian-griffith-1", "ian-griffith-2", "ian-griffith-3", "ian-griffith-4", "ian-griffith-5"],
+        picsNumber: 5,
         ogPic: "ian-griffith-og",
         urlName: "ian-griffith",
         bioText: 'is an acoustic singer-songwriter whose raw, emotional sound blends grunge and 90s alt-rock, influenced by Weezer, Foo Fighters, Corey Taylor, and Jars of Clay. He has performed across Tulsa, including a notable opening for comedian Andy Dick at Geaux Theaters, captivating audiences with his commanding voice and emotional depth. Inspired by his father, Ian began writing at 18, channeling honesty and vulnerability into his lyrics to connect with listeners. He is focused on building his audience, releasing a full album, and transitioning from open mic nights into a sustainable music career while reaching listeners worldwide.',
@@ -166,7 +166,7 @@ const monsterList ={
     },
     {
         name: "Elzie B. Hickerson",
-        pics: ["elzie-b-hickerson-1", "elzie-b-hickerson-2", "elzie-b-hickerson-3", "elzie-b-hickerson-4", "elzie-b-hickerson-5"],
+        picsNumber: 5,
         ogPic: "elzie-b-hickerson-og",
         urlName: "elzie-b-hickerson",
         bioText: 'Elzie B. Hickerson is an Oklahoma singer-songwriter whose music spans folk, Americana, and rock, capturing stories, emotions, and life’s journeys. Influenced by artists like James Taylor, The Beatles, Neil Young, and Van Morrison, he embraces a spirit of musical freedom that guides his sound. Each song reflects a moment, feeling, or person who shaped his path, creating music that feels both personal and familiar. Whether performing live or sharing recordings, Elzie aims to craft songs that resonate with listeners’ experiences as much as his own.',

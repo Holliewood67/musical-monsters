@@ -30,7 +30,7 @@ type Props = {
         siteName: 'Musical Monsters',
         images: [
             {
-              url: `https://www.musicalmonsterstulsa.com/epkpics/${monster?.ogPic}.jpg`, // Must be an absolute URL
+              url: `https://www.musicalmonsterstulsa.com/epkpics/${monster?.urlName}/${monster?.urlName}-og.jpg`, // Must be an absolute URL
               width: 800,
               height: 600,
             },

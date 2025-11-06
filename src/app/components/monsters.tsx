@@ -117,8 +117,7 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
               <MonsterCard
                 urlPath={monster.urlName}
                 monsterName={monster.name}
-                imgPath={`${
-                  monster.pics[Math.floor(Math.random() * monster.pics.length)]
+                imgPath={`${monster.urlName}/${monster.urlName}-${[Math.floor(Math.random() * monster.picsNumber) + 1]
                 }.jpg`}
               />
             </div>

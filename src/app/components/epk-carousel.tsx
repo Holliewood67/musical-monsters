@@ -81,14 +81,15 @@ export default function EPKCarousel({ monster }: { monster: any }) {
         ref={sliderRef}
         className="relative z-10 keen-slider mx-auto border-b-2 border-yellow-400 "
       >
-        {monster.pics.map((pic: string, i: number) => (
+        {[...Array(monster.picsNumber)].map((_, i) => (
+        // {monster.pics.map((pic: string, i: number) => (
           <div
             key={i}
             className="keen-slider__slide flex items-center justify-center"
           >
             <div className="relative w-full h-56 sm:h-72 md:h-96 lg:h-[32rem]">
               <Image
-                src={`/epkpics/${pic}.jpg`}
+                src={`/epkpics/${monster.urlName}/${monster.urlName}-${1 + i}.jpg`}
                 alt={monster.name}
                 fill
                 className="object-contain rounded-lg"
