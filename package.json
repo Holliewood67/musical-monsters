@@ -9,10 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@sanity/image-url": "^1.2.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "framer-motion": "^12.19.1",
     "keen-slider": "^6.8.6",
     "next": "14.2.6",
+    "next-sanity": "^11.6.5",
     "react": "^18",
     "react-dom": "^18",
     "sanitize-html": "^2.17.0",

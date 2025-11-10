@@ -1,67 +1,69 @@
 "use client"
-
 import { useEffect, useState } from "react"
 import { useKeenSlider, KeenSliderPlugin } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-
 import MonsterCard from "./monster-card"
-import monsterList from "./monster-list"
 
-export default function Monsters() {
-  const [monsters, setMonsters] = useState<any[]>([])
-
+export default function Monsters(
+  props: {
+    monsters: any,
+  }
+) {
+  const [monsterList, setMonsterList] = useState<any[]>([])
+  
   useEffect(() => {
-    const shuffled = [...monsterList.monsters]
+    const shuffled = [...props.monsters].map(monster => ({
+      ...monster,
+      randomPicNum: Math.floor(Math.random() * (monster.picsNumber || 1)) + 1
+    }))
     const first = shuffled.shift()
     const rest = shuffled.sort(() => 0.5 - Math.random())
-    setMonsters(first ? [first, ...rest] : rest)
-  }, [])
-
+    setMonsterList(first ? [first, ...rest] : rest)
+  }, [props.monsters])
   
-const AutoScroll: KeenSliderPlugin = (slider) => {
-  let timeout: ReturnType<typeof setTimeout>
-  let mouseOver = false
-
-  function clearNextTimeout() {
-    clearTimeout(timeout)
-  }
-
-  function nextTimeout() {
-    clearTimeout(timeout)
-    if (mouseOver) return
-    timeout = setTimeout(() => {
-      slider.next()
-    }, 100) // slide change timer
-  }
-
-  slider.on("created", () => {
-    slider.container.addEventListener("mouseover", () => {
-      mouseOver = true
-      clearNextTimeout()
-    })
-    slider.container.addEventListener("mouseout", () => {
-      mouseOver = false
+  const AutoScroll: KeenSliderPlugin = (slider) => {
+    let timeout: ReturnType<typeof setTimeout>
+    let mouseOver = false
+    
+    function clearNextTimeout() {
+      clearTimeout(timeout)
+    }
+    
+    function nextTimeout() {
+      clearTimeout(timeout)
+      if (mouseOver) return
+      timeout = setTimeout(() => {
+        slider.next()
+      }, 100)
+    }
+    
+    slider.on("created", () => {
+      slider.container.addEventListener("mouseover", () => {
+        mouseOver = true
+        clearNextTimeout()
+      })
+      slider.container.addEventListener("mouseout", () => {
+        mouseOver = false
+        nextTimeout()
+      })
       nextTimeout()
     })
-    nextTimeout()
-  })
-
-  slider.on("dragStarted", clearNextTimeout)
-  slider.on("animationEnded", nextTimeout)
-  slider.on("updated", nextTimeout)
-}
-
+    slider.on("dragStarted", clearNextTimeout)
+    slider.on("animationEnded", nextTimeout)
+    slider.on("updated", nextTimeout)
+  }
+  
   const [sliderRef] = useKeenSlider<HTMLDivElement>({
     loop: true,
     mode: "free-snap",
     slides: {
       perView: 1.5,
       spacing: 20,
-      origin: "center", // ensures center card is fully shown
+      origin: "center",
     },
     defaultAnimation: {
-    duration: 3000, // works only for navigation buttons and when clicking on gallery thumbnails, but not when swiping
-  },
+      duration: 3000,
+    },
     breakpoints: {
       "(min-width: 768px)": {
         slides: {
@@ -79,17 +81,17 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
       },
     },
   },
-[AutoScroll]
-)
-
-  if (!monsters.length) {
+  [AutoScroll]
+  )
+  
+  if (!monsterList.length) {
     return (
       <div className="text-center py-10">
         <h1>Loading Monsters...</h1>
       </div>
     )
   }
-
+  
   return (
     <section className="relative border-t-2 border-yellow-400" id="monster-section">
       {/* Video Background */}
@@ -102,30 +104,28 @@ const AutoScroll: KeenSliderPlugin = (slider) => {
       >
         <source src="/videos/monster-bg.mp4" type="video/mp4" />
       </video>
-
       {/* Content Layer */}
       <div className="relative z-10">
-      <div className="text-3xl text-center py-6">
-        <h1>Meet The Monsters</h1>
-      </div>
-      <div className="mx-auto overflow-hidden">
-      <div className="w-full overflow-hidden">
-        {/* Slider */}
-        <div ref={sliderRef} className="keen-slider pb-12">
-          {monsters.map((monster, i) => (
-            <div key={i} className="keen-slider__slide">
-              <MonsterCard
-                urlPath={monster.urlName}
-                monsterName={monster.name}
-                imgPath={`${monster.urlName}/${monster.urlName}-${[Math.floor(Math.random() * monster.picsNumber) + 1]
-                }.jpg`}
-              />
+        <div className="text-3xl text-center py-6">
+          <h1>Meet The Monsters</h1>
+        </div>
+        <div className="mx-auto overflow-hidden">
+          <div className="w-full overflow-hidden">
+            {/* Slider */}
+            <div ref={sliderRef} className="keen-slider pb-12">
+              {monsterList.map((monster) => (
+                <div key={monster._id} className="keen-slider__slide">
+                  <MonsterCard
+                    urlPath={monster.slug.current}
+                    monsterName={monster.name}
+                    imgPath={`${monster.slug.current}/${monster.slug.current}-${monster.randomPicNum}.jpg`}
+                  />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
-     </div>
-     </div>
     </section>
   )
 }

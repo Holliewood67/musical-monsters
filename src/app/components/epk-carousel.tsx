@@ -89,7 +89,7 @@ export default function EPKCarousel({ monster }: { monster: any }) {
           >
             <div className="relative w-full h-56 sm:h-72 md:h-96 lg:h-[32rem]">
               <Image
-                src={`/epkpics/${monster.urlName}/${monster.urlName}-${1 + i}.jpg`}
+                src={`/epkpics/${monster.slug.current}/${monster.slug.current}-${1 + i}.jpg`}
                 alt={monster.name}
                 fill
                 className="object-contain rounded-lg"
