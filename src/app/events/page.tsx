@@ -1,48 +1,61 @@
-"use client";
-import { useEffect, useState } from "react";
 import { Metal_Mania } from "next/font/google";
+import EventCard from "../components/event-card";
+import { client } from "@/sanity/client";
+import { SanityEvent } from "@/types/sanity";
 
 const metal = Metal_Mania({
   subsets: ['latin'],
   weight: ['400'], 
 })
 
+const EVENTS_LIST_QUERY = `*[
+  _type == "event"
+  && !(_id in path("drafts.**"))
+] | order(start asc) {
+  _id,
+  title,
+  slug,
+  start,
+  presenter,
+  image {
+    asset-> {
+      _id,
+      url
+    }
+  },
+  description,
+  featuredMonsters[]->{
+    _id,
+    name,
+    slug,
+    images[]{
+      asset->{
+        _id,
+        url
+      }
+    }
+  }
+}`;
 
-export default function FullCalendarPage() {
-  const calendarId = process.env.NEXT_PUBLIC_CALENDAR_ID;
-  const [isMobile, setIsMobile] = useState(false);
+const options = { next: { revalidate: 30 } };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    handleResize(); // run once on mount
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const calendarSrc = `https://calendar.google.com/calendar/embed?src=${encodeURIComponent(
-    calendarId!
-  )}&ctz=America%2FChicago${isMobile ? "&mode=AGENDA" : ""}`;
-
+export default async function EventsPage() {
+  const events = await client.fetch<SanityEvent[]>(EVENTS_LIST_QUERY, {}, options);
+  
   return (
-    <section className="min-h-screen w-full flex flex-col items-center justify-center px-4 py-12 bg-black text-white border-b-2">
-      <h1 className="text-4xl font-bold mb-6 text-center">Full Calendar</h1>
-      <p className={`${metal.className} mb-8 text-2xl text-center text-gray-300 max-w-xl`}>
-        Check out whats coming next from the Musical Monsters family!
-      </p>
-
-      <div className="w-full max-w-6xl h-[700px] sm:h-[800px] rounded-lg overflow-hidden border border-white shadow-lg">
-        <iframe
-          src={calendarSrc}
-          style={{ border: 0 }}
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          scrolling="no"
-          title="Lot No. 6 Events Calendar"
-        ></iframe>
-      </div>
+    <section id="events" className="flex flex-col justify-center text-center items-center py-4 border-b-2 max-w-7xl mx-auto">
+      <h1 className={`${metal.className} text-4xl pb-4`}>UPCOMING EVENTS</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 p-4">
+        {events.length === 0 ? (
+          <p className="text-gray-400 col-span-full">No upcoming events.</p>
+        ) : (
+          events.map((event) => (
+            <div key={event._id}>
+              <EventCard event={event} />
+            </div>
+          ))
+        )}
+      </div>      
     </section>
-  );
+  )
 }
