@@ -151,7 +151,7 @@ export default async function EventPage({ params }: Props) {
 
       {event.featuredMonsters && event.featuredMonsters.length > 0 && (
         <div className="mt-12 w-full">
-          <h2 className="text-2xl font-bold mb-4">Featured Artists</h2>
+          <h2 className="text-2xl font-bold mb-4">Hosts & Artists</h2>
           <div className="flex flex-wrap gap-4 justify-center">
             {event.featuredMonsters.map((monster) => (
                 <div key={monster._id} className="keen-slider__slide">
